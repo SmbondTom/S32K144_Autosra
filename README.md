@@ -1,0 +1,2 @@
+# S32K144_Autosra
+基于S32K144芯片的Autosar最小系统

@@ -1,0 +1,17 @@
+C:\iar\ewarm-9.60.3\arm\bin\armPROC.dll
+
+ C:\iar\ewarm-9.60.3\arm\bin\armJLINK.dll
+
+ G:\AutoProject144\S32k144_MinSystem\WorkSpace_IAR\Debug\Exe\S32K144_MinSystem.out
+
+ --plugin=C:\iar\ewarm-9.60.3\arm\bin\armLibSupportUniversal.dll
+
+ --device_macro=C:\iar\ewarm-9.60.3\arm/config/debugger/NXP/KE1xF.dmac
+
+ --device_macro=C:\iar\ewarm-9.60.3\arm/config/debugger/NXP/S32K14x_trace.dmac
+
+ --flash_loader=C:\iar\ewarm-9.60.3\arm/config/flashloader/NXP/FlashS32K144.board
+
+ 
+
+

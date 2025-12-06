@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildDb>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>G:\AutoProject144\S32k144_MinSystem\WorkSpace_IAR\Debug\Exe\S32K144_MinSystem.out</Path>
+            <Output>
+                <Path>G:\AutoProject144\S32k144_MinSystem\WorkSpace_IAR\Debug\List\S32K144_MinSystem.map</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>

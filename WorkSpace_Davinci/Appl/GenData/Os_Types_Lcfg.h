@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2025-12-04 19:59:54
+ *   Generation Time: 2025-12-07 20:44:14
  *           Project: Autosar_MinSystem - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -62,12 +62,15 @@
 #define IdleTask_OsCore0 IdleTask_OsCore0
 #define OsTask_Bsw OsTask_Bsw
 #define OsTask_Init OsTask_Init
+#define OsTask_swc_Init OsTask_swc_Init
+#define OsTask_swc_Task OsTask_swc_Task
 
 /* Category 2 ISR identifiers. */
 #define CounterIsr_SystemTimer CounterIsr_SystemTimer
 
 /* Alarm identifiers. */
 #define Rte_Al_TE2_OsTask_Bsw_0_10ms Rte_Al_TE2_OsTask_Bsw_0_10ms
+#define Rte_Al_TE_Test_swc_Test_swc_10ms Rte_Al_TE_Test_swc_Test_swc_10ms
 
 /* Counter identifiers. */
 #define SystemTimer SystemTimer
@@ -127,7 +130,9 @@ typedef enum
   IdleTask_OsCore0 = 0,
   OsTask_Bsw = 1,
   OsTask_Init = 2,
-  OS_TASKID_COUNT = 3,
+  OsTask_swc_Init = 3,
+  OsTask_swc_Task = 4,
+  OS_TASKID_COUNT = 5,
   INVALID_TASK = OS_TASKID_COUNT
 } TaskType;
 
@@ -143,7 +148,8 @@ typedef enum
 typedef enum
 {
   Rte_Al_TE2_OsTask_Bsw_0_10ms = 0,
-  OS_ALARMID_COUNT = 1
+  Rte_Al_TE_Test_swc_Test_swc_10ms = 1,
+  OS_ALARMID_COUNT = 2
 } AlarmType;
 
 /*! Counter identifiers. */

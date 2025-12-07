@@ -56,12 +56,18 @@
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Return
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Start
+ *  Rte_Runnable_Test_swc_Test_swc_10ms_Return
+ *  Rte_Runnable_Test_swc_Test_swc_10ms_Start
+ *  Rte_Runnable_Test_swc_Test_swc_Init_Return
+ *  Rte_Runnable_Test_swc_Test_swc_Init_Start
  *  Rte_SwitchHook_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_Return
  *  Rte_SwitchHook_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_Start
  *  Rte_Task_Activate
  *  Rte_Task_Dispatch
  *  Rte_Task_WaitEvent
  *  Rte_Task_WaitEventRet
+ *  Rte_WriteHook_Test_swc_Request_ESH_RunRequest_0_requestedMode_Return
+ *  Rte_WriteHook_Test_swc_Request_ESH_RunRequest_0_requestedMode_Start
  *  SchM_EnterHook_BswM_BSWM_EXCLUSIVE_AREA_0_Return
  *  SchM_EnterHook_BswM_BSWM_EXCLUSIVE_AREA_0_Start
  *  SchM_EnterHook_Det_DET_EXCLUSIVE_AREA_0_Return

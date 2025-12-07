@@ -121,7 +121,7 @@ extern "C" {
 * @implements     DIO_DEV_ERROR_DETECT_define
 * @api
 */
-#define DIO_DEV_ERROR_DETECT    (STD_OFF)
+#define DIO_DEV_ERROR_DETECT    (STD_ON)
 
 /**
 * @brief          Function @p Dio_GetVersionInfo() enable switch.

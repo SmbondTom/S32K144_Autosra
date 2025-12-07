@@ -377,6 +377,13 @@
                     <state>$PROJ_DIR$\..\Include</state>
                     <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\RteAnalyzer\Source</state>
                     <state>$PROJ_DIR$\..\WorkSpace_EBTresos\output\generated\include</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\BswM</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\Det</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\Dio</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\EcuM</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\Mcu</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\Port</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\Source\Test_swc</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -673,6 +680,13 @@
                     <state>$PROJ_DIR$\..\Include</state>
                     <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\RteAnalyzer\Source</state>
                     <state>$PROJ_DIR$\..\WorkSpace_EBTresos\output\generated\include</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\BswM</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\Det</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\Dio</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\EcuM</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\Mcu</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\GenData\ContractPhase\Port</state>
+                    <state>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\Source\Test_swc</state>
                 </option>
                 <option>
                     <name>AExtraOptionsCheckV2</name>
@@ -2645,6 +2659,9 @@
                     </file>
                     <file>
                         <name>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\Source\Os_Callout_Stubs.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\Source\Test_swc.c</name>
                     </file>
                 </group>
             </group>

@@ -45,6 +45,31 @@
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
 
+   TASK OsTask_swc_Init {
+      ACTIVATION = 1:"@RO@";
+      PRIORITY = 0:"@RO@";
+      SCHEDULE = FULL:"@RO@";
+// TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
+   TASK OsTask_swc_Task {
+      ACTIVATION = 1:"@RO@";
+      PRIORITY = 0:"@RO@";
+      SCHEDULE = FULL:"@RO@";
+// TIMING_PROTECTION = FALSE|TRUE; (AUTOSAR OS only)
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
+   ALARM Rte_Al_TE_Test_swc_Test_swc_10ms {
+      COUNTER = SystemTimer;
+      ACTION = ACTIVATETASK
+      {
+         TASK = OsTask_swc_Task;
+      }:"@ROC@";
+      AUTOSTART = FALSE:"@RO@";
+   }:"@RO@@NR@";
+
    EVENT Rte_Ev_Cyclic2_OsTask_Bsw_0_10ms {
       MASK = AUTO;
    }:"@ROC@@NR@";

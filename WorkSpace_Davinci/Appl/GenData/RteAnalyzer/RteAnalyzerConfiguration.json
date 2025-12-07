@@ -597,6 +597,26 @@
             "../Components/TSC_Os_OsCore0_swc"
          ],
          "SourceFile" : "Source/TSC_Os_OsCore0_swc.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "F:/AutosarSystem/Vector/S32K1XX_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Test_swc"
+         ],
+         "SourceFile" : "Source/Test_swc.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "F:/AutosarSystem/Vector/S32K1XX_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_Test_swc"
+         ],
+         "SourceFile" : "Source/TSC_Test_swc.c"
       }
    ],
    "TaskList" : [
@@ -617,6 +637,18 @@
          "Preemptive" : "1",
          "Priority" : "20",
          "TaskName" : "OsTask_Init"
+      },
+      {
+         "OsApplication" : "",
+         "Preemptive" : "1",
+         "Priority" : "0",
+         "TaskName" : "OsTask_swc_Init"
+      },
+      {
+         "OsApplication" : "",
+         "Preemptive" : "1",
+         "Priority" : "0",
+         "TaskName" : "OsTask_swc_Task"
       }
    ],
    "TemplateDataBaseDirectory" : "F:\\AutosarSystem\\Vector\\S32K1XX_SIP\\MICROSAR\\CBD1800257_D01_S32K1xx\\Generators\\Rte"

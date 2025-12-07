@@ -15,5 +15,10 @@
 	</FILEREF>
 	<FILEREF>
 		<ARXML>ECUProjects/Autosar_MinSystem.arxml</ARXML>
+		<DVG>ECUProjects/Autosar_MinSystem.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/Test_swc.arxml</ARXML>
+		<DVG>ComponentTypes/Test_swc.dvg</DVG>
 	</FILEREF>
 </DCF>

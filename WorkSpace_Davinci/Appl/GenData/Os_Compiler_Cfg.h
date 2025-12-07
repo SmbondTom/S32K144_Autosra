@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Compiler_Cfg.h
- *   Generation Time: 2025-12-03 14:25:03
+ *   Generation Time: 2025-12-07 20:44:14
  *           Project: Autosar_MinSystem - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -38,6 +38,8 @@
 
 # define OS_OSTASK_BSW_CODE
 # define OS_OSTASK_INIT_CODE
+# define OS_OSTASK_SWC_INIT_CODE
+# define OS_OSTASK_SWC_TASK_CODE
 
 
 #endif /* OS_COMPILER_CFG_H */

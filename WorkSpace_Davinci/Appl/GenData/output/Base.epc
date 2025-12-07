@@ -17,7 +17,7 @@
           </ADMIN-DATA>
           <DEFINITION-REF DEST="ECUC-MODULE-DEF">/TS_T40D2M10I1R0/Base</DEFINITION-REF>
           <CONTAINERS>
-            <ECUC-CONTAINER-VALUE UUID="277fb18c-1daa-4c03-b9d6-82df527753a4">
+            <ECUC-CONTAINER-VALUE UUID="a33a77bb-9f9c-400d-8e6c-21ecbe2bd635">
               <SHORT-NAME>CommonPublishedInformation</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Base/CommonPublishedInformation</DEFINITION-REF>
               <PARAMETER-VALUES>

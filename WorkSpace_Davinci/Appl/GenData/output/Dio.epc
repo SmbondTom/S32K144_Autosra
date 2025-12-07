@@ -12,7 +12,7 @@
           <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
           <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/TS_T40D2M10I1R0/Dio_Impl</MODULE-DESCRIPTION-REF>
           <CONTAINERS>
-            <ECUC-CONTAINER-VALUE UUID="94330637-0c05-402a-8ab4-92391021c867">
+            <ECUC-CONTAINER-VALUE UUID="46e3d185-29d5-4d55-b97a-21ad612b4452">
               <SHORT-NAME>CommonPublishedInformation</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Dio/CommonPublishedInformation</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -50,11 +50,11 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
               </PARAMETER-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="538c2e6d-c292-43fc-ac8e-fd37f3310617">
+            <ECUC-CONTAINER-VALUE UUID="3c7e4dee-3d2d-430d-99c7-750dfa56b114">
               <SHORT-NAME>DioConfig</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Dio/DioConfig</DEFINITION-REF>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="de35d8c1-acbd-4501-acd0-0cb4312aa76f">
+                <ECUC-CONTAINER-VALUE UUID="7d97e897-740b-4bad-ae70-b8caa9db8cdf">
                   <SHORT-NAME>DioPort_B</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Dio/DioConfig/DioPort</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -64,7 +64,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="3d78dac6-2677-43f0-a7f3-648c0bfdeaee">
+                    <ECUC-CONTAINER-VALUE UUID="d1b523bd-3a2b-4370-ad8c-638042f7cc0e">
                       <SHORT-NAME>DioChannel_D_PTB0</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Dio/DioConfig/DioPort/DioChannel</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -74,7 +74,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="21fc2bbc-fd48-4285-aae6-3f2585622bcb">
+                    <ECUC-CONTAINER-VALUE UUID="2811e120-a807-445c-aa39-235021bbc7c9">
                       <SHORT-NAME>DioChannel_D_PTB1</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Dio/DioConfig/DioPort/DioChannel</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -86,7 +86,7 @@
                     </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="ea7046fe-adc6-4f3a-9c79-4e0a8c8aaf70">
+                <ECUC-CONTAINER-VALUE UUID="54f9e6c3-99d4-48e6-8da4-a3ed7795f660">
                   <SHORT-NAME>DioPort_D</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Dio/DioConfig/DioPort</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -96,7 +96,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="d7083b3c-fff8-4163-a453-5ea6bd78b336">
+                    <ECUC-CONTAINER-VALUE UUID="3860623d-eb89-47e3-8b16-cee8adcd5d36">
                       <SHORT-NAME>DioChannel_LED_RED_PTD15</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Dio/DioConfig/DioPort/DioChannel</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -110,13 +110,13 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="a1e03726-2249-4d63-b2e5-4b4ecbbb9b53">
+            <ECUC-CONTAINER-VALUE UUID="fdb5a278-ccd5-4d32-8665-b4c39d0f93d4">
               <SHORT-NAME>DioGeneral</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Dio/DioGeneral</DEFINITION-REF>
               <PARAMETER-VALUES>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I1R0/Dio/DioGeneral/DioDevErrorDetect</DEFINITION-REF>
-                  <VALUE>0</VALUE>
+                  <VALUE>1</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I1R0/Dio/DioGeneral/DioEnableUserModeSupport</DEFINITION-REF>

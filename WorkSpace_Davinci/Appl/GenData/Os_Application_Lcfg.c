@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Application_Lcfg.c
- *   Generation Time: 2025-12-04 19:59:54
+ *   Generation Time: 2025-12-07 20:44:14
  *           Project: Autosar_MinSystem - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -104,6 +104,7 @@ OS_LOCAL VAR(Os_AppType, OS_VAR_NOINIT) OsCfg_App_SystemApplication_OsCore0_Dyn;
 OS_LOCAL CONST(Os_AlarmConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCore0_AlarmRefs[OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ALARMS + 1] =
 {
   OS_ALARM_CASTCONFIG_ALARMSETEVENT_2_ALARM(OsCfg_Alarm_Rte_Al_TE2_OsTask_Bsw_0_10ms),
+  OS_ALARM_CASTCONFIG_ALARMACTIVATETASK_2_ALARM(OsCfg_Alarm_Rte_Al_TE_Test_swc_Test_swc_10ms),
   NULL_PTR
 };
 
@@ -145,6 +146,8 @@ OS_LOCAL CONST(Os_TaskConfigRefType, OS_CONST) OsCfg_App_SystemApplication_OsCor
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_IdleTask_OsCore0),
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_OsTask_Bsw),
   OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_OsTask_Init),
+  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_OsTask_swc_Init),
+  OS_TASK_CASTCONFIG_TASK_2_TASK(OsCfg_Task_OsTask_swc_Task),
   NULL_PTR
 };
 

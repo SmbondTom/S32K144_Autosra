@@ -53,6 +53,45 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="67b7dc87-0f78-41be-bcf9-4813012e2fd4">
+                  <SHORT-NAME>Rte_Al_TE_Test_swc_Test_swc_10ms</SHORT-NAME>
+                  <ANNOTATIONS>
+                    <ANNOTATION>
+                      <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                    </ANNOTATION>
+                  </ANNOTATIONS>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedActivationOffset</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteExpectedTickDuration</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsAlarmRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_Test_swc_Test_swc_10ms</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsTaskRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/OsTask_swc_Task</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
             <ECUC-CONTAINER-VALUE UUID="0b33f173-66a3-4c67-aae1-1e49ef4fe93c">
@@ -629,7 +668,7 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="3d563df4-d80c-433f-898d-c5d7dea18596">
+            <ECUC-CONTAINER-VALUE UUID="732c707a-c62f-4c7f-ad38-c04b9a3eafea">
               <SHORT-NAME>Dio</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
               <REFERENCE-VALUES>
@@ -643,7 +682,7 @@
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="88990f65-75f7-493f-80dd-a7454d2ef193">
+                <ECUC-CONTAINER-VALUE UUID="9cb8dfa8-cbf4-494e-b51b-4f428375c640">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_00</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -659,7 +698,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="cc648ec2-1c3b-496c-b0c0-5735104c8a28">
+                <ECUC-CONTAINER-VALUE UUID="4572c47f-f331-4caf-804d-24087856542c">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_01</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -675,7 +714,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="506456ab-78a4-4e67-9411-477ba9b9dbbe">
+                <ECUC-CONTAINER-VALUE UUID="6622e062-fd08-4dd8-a7a8-af1ee62130dd">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_02</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -691,7 +730,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="ef332954-b755-4b3d-8f45-a5c038a3fef9">
+                <ECUC-CONTAINER-VALUE UUID="37c4952c-b997-4ce7-947c-3ff67e7a7d06">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_03</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -707,7 +746,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="0be6c97f-620c-4f1a-b6b6-3d2effbdedf5">
+                <ECUC-CONTAINER-VALUE UUID="72857e5a-41a2-42a0-aafa-96244fa755bc">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_04</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -723,7 +762,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="fd2761b0-6ec1-418b-a539-6b6f557c644a">
+                <ECUC-CONTAINER-VALUE UUID="c1cd40a3-8f74-4273-b994-69a071fff6a4">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_05</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -739,7 +778,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="a9a2aa65-fecc-43aa-909d-af9ddf7fd7c9">
+                <ECUC-CONTAINER-VALUE UUID="607aefac-7f7b-4522-a7d6-cbd342a57553">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_06</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -755,7 +794,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="49f5be3e-f4d9-4b58-a388-e4cf5cfe97dd">
+                <ECUC-CONTAINER-VALUE UUID="f322abb5-0e72-4c3a-8640-ee06781d4b4b">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_07</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -771,7 +810,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="53205ef7-0644-43e5-963c-a29cab80602f">
+                <ECUC-CONTAINER-VALUE UUID="d3e32c85-b478-416f-9588-4c52a609f2d7">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_08</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -787,7 +826,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="b7498cb9-6d02-4919-9644-0821c12bd56c">
+                <ECUC-CONTAINER-VALUE UUID="aa6c6c7b-cc15-4a93-b573-1c348a04583b">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_09</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -803,7 +842,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="7b856079-7be4-4a39-ab93-e21ce88eb3c3">
+                <ECUC-CONTAINER-VALUE UUID="4d95ad76-dffe-432d-86f5-da0b3ada940d">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_10</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -819,7 +858,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="5797747b-97cf-45ff-818a-d75ed794ebe1">
+                <ECUC-CONTAINER-VALUE UUID="9b1e0784-5d44-4f73-a23d-d912746a7826">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_11</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -835,7 +874,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="159d1a92-dc15-48ec-84b6-76306181154b">
+                <ECUC-CONTAINER-VALUE UUID="30cc8abb-6107-462c-99b7-de56f919ff54">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_12</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -851,7 +890,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="9fb407a0-9c36-441c-99d7-48e0b691172b">
+                <ECUC-CONTAINER-VALUE UUID="e3628034-deae-4bae-9bd1-7161c023aa29">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_13</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -867,7 +906,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="f2f90430-b73d-4a6b-94c0-e19da5a5fee4">
+                <ECUC-CONTAINER-VALUE UUID="ec689904-4684-455b-abf6-0ec6403096d1">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_14</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -883,7 +922,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="8b92f738-9d53-4f69-b717-a869a088bf17">
+                <ECUC-CONTAINER-VALUE UUID="8cab1f23-ae20-46ab-a499-b02140826a6e">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_15</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -899,7 +938,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="964e6f0c-a1d9-4c83-a033-f5d125253534">
+                <ECUC-CONTAINER-VALUE UUID="d0efb104-19ec-47be-80e0-a249ba98454a">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_16</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -915,7 +954,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="4508f041-e141-46f5-be07-d47f4df908f1">
+                <ECUC-CONTAINER-VALUE UUID="a343fe39-191c-4a6d-a9f0-d5bd1007de4c">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_17</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -931,7 +970,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="36824477-7cee-4485-89ac-9a403d8c521e">
+                <ECUC-CONTAINER-VALUE UUID="64c2af6a-b0f1-4f60-b2f0-8324f6a9b92f">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_18</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -947,7 +986,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="d719309f-afdf-4072-ac56-1b11c4d0e464">
+                <ECUC-CONTAINER-VALUE UUID="c88e0f0c-6c73-48ff-a9e6-8335b990fe09">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_19</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -963,7 +1002,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="49d80da3-bb38-4576-96ff-c4eb73a79c50">
+                <ECUC-CONTAINER-VALUE UUID="157ba81d-2a71-4fa9-bd17-413f91974679">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_20</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -979,7 +1018,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="72ba08f0-9267-462b-a1a0-767ca1e0259b">
+                <ECUC-CONTAINER-VALUE UUID="5a6bb779-be33-4ba0-a462-460b1b6f53bc">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_21</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -995,7 +1034,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="db72fec8-db1b-409b-96d5-82d762111128">
+                <ECUC-CONTAINER-VALUE UUID="3a5d9c5e-4a0e-4b00-8694-0412b909168c">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_22</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1011,7 +1050,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="73af7966-958e-4bf4-8699-58f424876524">
+                <ECUC-CONTAINER-VALUE UUID="a9088dd0-ad6e-49ae-800a-a2c519db3c4e">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_23</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1027,7 +1066,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="2dcd9171-d76d-4804-9ff1-a002a2e2acd6">
+                <ECUC-CONTAINER-VALUE UUID="735d7f28-34db-4e18-bf3c-30ff485fb639">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_24</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1043,7 +1082,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="b85ac992-1a2a-447f-99a1-bd068ebc5c54">
+                <ECUC-CONTAINER-VALUE UUID="a54b064c-a4d1-4007-b42d-a77a16aa3cb9">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_25</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1059,7 +1098,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="42e1953a-bdc3-4e90-aa30-bb617583145f">
+                <ECUC-CONTAINER-VALUE UUID="9248491c-f20b-478b-bdc8-c068ec23b0e7">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_26</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1075,7 +1114,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="6f99d5e4-c5ef-4ac6-9ed3-efd36e7c6bff">
+                <ECUC-CONTAINER-VALUE UUID="435e14d7-8870-4bb6-a176-a3357ea7a98e">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_27</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1091,7 +1130,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="9bd0ab84-832c-4532-84e5-fdb4b134749c">
+                <ECUC-CONTAINER-VALUE UUID="713a7cb2-1c39-4092-813d-a31a4637a881">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_28</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1107,7 +1146,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="0171cd84-5529-47ad-8c2a-174c5cf807a2">
+                <ECUC-CONTAINER-VALUE UUID="d679043a-8928-4f48-9c0e-948fd7fa3716">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_29</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1123,7 +1162,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="da48eb98-daff-4e7c-8b0f-a927200753a4">
+                <ECUC-CONTAINER-VALUE UUID="a34ef00e-8b08-4f75-ad62-abb2e699cceb">
                   <SHORT-NAME>DIO_EXCLUSIVE_AREA_30</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1141,7 +1180,7 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="7be360e6-580a-48d8-9cca-1094d9e3afc9">
+            <ECUC-CONTAINER-VALUE UUID="c16966e0-1d17-4cb2-86bd-3725104c52d6">
               <SHORT-NAME>Port</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
               <REFERENCE-VALUES>
@@ -1155,7 +1194,7 @@
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="ea33082f-9ae6-45cf-8319-b0e386d0e374">
+                <ECUC-CONTAINER-VALUE UUID="6d4d5e22-9dbe-4304-afe8-e34a365c336e">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_00</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1171,7 +1210,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="9871b580-c033-4933-abb7-01b0079324ae">
+                <ECUC-CONTAINER-VALUE UUID="021f88dd-2046-4b41-a2a9-31d7bf027728">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_01</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1187,7 +1226,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="f3db7d76-bf30-403e-a710-5f27c447eb35">
+                <ECUC-CONTAINER-VALUE UUID="41949131-f484-48ac-a8ed-1b144c0d272c">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_02</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1203,7 +1242,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="efe34501-3136-47dc-b6ba-2428d9ca559f">
+                <ECUC-CONTAINER-VALUE UUID="95921012-50b2-4dbf-91dd-5674933bf060">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_03</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1219,7 +1258,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="050f51cb-0a43-4e7c-a0de-d47dbf458e77">
+                <ECUC-CONTAINER-VALUE UUID="8dec4daf-5d5a-4599-a77b-e45531f97095">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_04</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1235,7 +1274,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="588357bb-1f10-4c11-af8c-461aac2d7faa">
+                <ECUC-CONTAINER-VALUE UUID="cec83de0-2511-4eb7-9dc7-13ca651e58fd">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_05</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1251,7 +1290,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="eb304717-3905-4740-9bd2-5ac2bb218705">
+                <ECUC-CONTAINER-VALUE UUID="cff801a6-1817-4503-b8e7-571ae483f834">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_06</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1267,7 +1306,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="b9c7d48e-1c14-4629-85a8-9c8e43bcd879">
+                <ECUC-CONTAINER-VALUE UUID="e34580fe-e4a5-45fb-af8c-a238e087f93f">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_07</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1283,7 +1322,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="932f8400-8bca-4986-af92-c7c159a85fd7">
+                <ECUC-CONTAINER-VALUE UUID="f83803a1-e584-41b4-939d-ebc5899b14aa">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_08</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1299,7 +1338,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="210c156a-a2b3-4b30-910c-2b1f50ed446b">
+                <ECUC-CONTAINER-VALUE UUID="9da8b089-ba4b-4a09-9dce-f44bf0b0fc36">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_09</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1315,7 +1354,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="561cd4a4-b261-4a99-85d4-aef54209224e">
+                <ECUC-CONTAINER-VALUE UUID="c36f0180-668f-4c02-8762-e2d98d06ca88">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_10</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1331,7 +1370,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="5bc71d07-775e-4b37-b7f0-ea79154e381d">
+                <ECUC-CONTAINER-VALUE UUID="8cf7a026-e5a3-40db-9ff6-9e4fddaf1222">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_11</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1347,7 +1386,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="9a73ece1-b126-4ec0-a2d4-2ce4541454d8">
+                <ECUC-CONTAINER-VALUE UUID="9650c69a-5f86-48e7-a246-259356851fbb">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_12</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1363,7 +1402,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="2b791f22-6a87-4348-8aa6-c4adc6d09dde">
+                <ECUC-CONTAINER-VALUE UUID="00ff965c-9fd7-487b-8dac-fcdf8dfd84e7">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_13</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1379,7 +1418,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="144792d5-1d5e-4152-97b4-59307668cf59">
+                <ECUC-CONTAINER-VALUE UUID="7a716aa9-7eb5-4a71-aa04-543fff3a919c">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_14</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1395,7 +1434,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="fd7e5704-02cc-4379-a510-2c4f2fc71b12">
+                <ECUC-CONTAINER-VALUE UUID="36fa8327-f4cd-4277-a996-92d0920d1c10">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_15</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1411,7 +1450,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="f07147f1-5153-41df-b0d4-cff038e9db22">
+                <ECUC-CONTAINER-VALUE UUID="3679ddbc-1f2d-46af-a321-d9f801266827">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_16</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1427,7 +1466,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="988ebf06-049c-4d34-a8ab-6f97826d9b8a">
+                <ECUC-CONTAINER-VALUE UUID="f9d065dc-17b2-4ccc-b2bb-5218c089be62">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_17</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1443,7 +1482,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="061142ca-d07c-423b-8db6-bea263d6b8e3">
+                <ECUC-CONTAINER-VALUE UUID="b3fb9a7f-d44b-4940-a237-ca3e336d7615">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_18</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1459,7 +1498,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="87918bec-7678-4f36-b5c5-91573af6e4f5">
+                <ECUC-CONTAINER-VALUE UUID="e4d9ce3f-d23b-4a56-ae14-c0d57848d788">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_19</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1475,7 +1514,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="86ea63c0-d1e4-44e1-83f4-50580738f201">
+                <ECUC-CONTAINER-VALUE UUID="787a1f45-ae07-41c2-b10b-a7de1e4033a9">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_20</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1491,7 +1530,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="278427a1-32dd-4190-8909-e8581fd7770c">
+                <ECUC-CONTAINER-VALUE UUID="a3264440-4215-401b-804e-991524864618">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_21</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1507,7 +1546,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="2ae81a80-ed80-4794-bf06-051fefbc03be">
+                <ECUC-CONTAINER-VALUE UUID="d91f04d6-898b-49d4-a72f-3949ab388068">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_22</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1523,7 +1562,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="d2bdcb6d-eeeb-41c8-9287-751a8dd50805">
+                <ECUC-CONTAINER-VALUE UUID="5b73b946-a954-4426-8f56-3fdad888d987">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_23</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1539,7 +1578,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="bdeea910-9510-4f71-adf0-bf57cd84429e">
+                <ECUC-CONTAINER-VALUE UUID="e1e45a3d-0e0d-460d-a2c3-eaed26281522">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_24</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1555,7 +1594,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="3ef03b6d-65ea-4c15-bb36-dae6a5532b64">
+                <ECUC-CONTAINER-VALUE UUID="88ac88fe-1961-4274-878f-9740c7025218">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_25</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1571,7 +1610,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="d64c06a6-9d39-48c6-8eef-94e9484127f8">
+                <ECUC-CONTAINER-VALUE UUID="35c65035-0bab-480c-a6ce-e9b78e9ab1f7">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_26</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1587,7 +1626,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="c2142e52-b8eb-452a-bf66-fa5bfe8cbe82">
+                <ECUC-CONTAINER-VALUE UUID="f856aa64-ead1-4b3b-ba13-b5a86718c2a9">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_27</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1603,7 +1642,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="8191725c-3eb8-4a5c-934b-e7e4fcdda0ed">
+                <ECUC-CONTAINER-VALUE UUID="73444ad0-ad76-4803-b15d-36cc728538cf">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_28</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1619,7 +1658,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="0119aefd-943d-4a87-92d8-fd36dcca9bd5">
+                <ECUC-CONTAINER-VALUE UUID="0f959ba8-befe-4af4-8df4-b3fe9792ca38">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_29</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1635,7 +1674,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="4b11444f-7f75-4427-92fc-e675589a3b62">
+                <ECUC-CONTAINER-VALUE UUID="5763cbf9-a824-4a39-9743-b62536a74bfd">
                   <SHORT-NAME>PORT_EXCLUSIVE_AREA_30</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1653,7 +1692,7 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="f825696f-d508-4ce6-87a9-35d29660f402">
+            <ECUC-CONTAINER-VALUE UUID="50dcbd3c-091c-4b55-8d76-480aa8a1ddc4">
               <SHORT-NAME>Mcu</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance</DEFINITION-REF>
               <REFERENCE-VALUES>
@@ -1667,7 +1706,7 @@
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="dd874d58-e9d0-4db8-b362-3d8fddd4bf66">
+                <ECUC-CONTAINER-VALUE UUID="0f39995d-9c02-4f2a-b445-0e1edf52a8ba">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_00</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1683,7 +1722,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="ded321c6-51af-441c-8d07-b95922679605">
+                <ECUC-CONTAINER-VALUE UUID="91dffb29-399c-4fe8-a54c-88f38bbac605">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_01</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1699,7 +1738,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="80801b08-ae19-496c-8543-99af9720d6a5">
+                <ECUC-CONTAINER-VALUE UUID="8536f720-5163-404c-afba-c2a4ca4e7ea4">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_02</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1715,7 +1754,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="5dd83a8d-72b8-445a-86fd-de83979118d8">
+                <ECUC-CONTAINER-VALUE UUID="2865a42c-c053-4dfd-9a23-ff84384896e3">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_03</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1731,7 +1770,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="7ac2e1e2-cd25-4314-81f3-bce818f14446">
+                <ECUC-CONTAINER-VALUE UUID="9199a3df-a291-4902-95bc-d5245ea9ba2b">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_04</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1747,7 +1786,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="5420d133-7142-4cf1-89f6-53ecf468e56d">
+                <ECUC-CONTAINER-VALUE UUID="111864cd-ca68-4a9b-b8ee-ceb04c47a244">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_05</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1763,7 +1802,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="d68b40dc-821a-4803-be8f-8ffb170bc6db">
+                <ECUC-CONTAINER-VALUE UUID="dd393d46-202d-4c20-abd8-4603b7e29d1f">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_06</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1779,7 +1818,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="11883eb2-9e97-4357-8313-1a1e4dafc45f">
+                <ECUC-CONTAINER-VALUE UUID="150296d7-91d5-4ad4-9de3-aca99e554132">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_07</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1795,7 +1834,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="34be45ae-d803-4360-88dc-027bb66b5901">
+                <ECUC-CONTAINER-VALUE UUID="2ad38ee2-63ea-4c02-a2dd-7ce4fd9706e0">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_08</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1811,7 +1850,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="4916110e-4915-4854-8eea-ceacf5630815">
+                <ECUC-CONTAINER-VALUE UUID="15ca90f3-b202-43a9-9ab5-7968aa684add">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_09</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1827,7 +1866,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="b6ad7423-4c62-4f38-b02e-9b8f229bd527">
+                <ECUC-CONTAINER-VALUE UUID="859142a6-1714-4bad-bfcb-2014b9c45da5">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_10</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1843,7 +1882,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="2925376a-3a31-45e6-9c29-f4787f42cf66">
+                <ECUC-CONTAINER-VALUE UUID="a3cd569d-c217-4d40-b8aa-5a715ea888db">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_11</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1859,7 +1898,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="23f76fb2-66a4-4f8d-8d97-32364eb6e6bf">
+                <ECUC-CONTAINER-VALUE UUID="77160749-d53c-4491-a553-7a80fbfe48ee">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_12</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1875,7 +1914,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="5e2accfc-12a5-4cbc-8950-71fb45d3bfb9">
+                <ECUC-CONTAINER-VALUE UUID="7998d61f-98b5-4bfd-9f10-7b91fc67a4f7">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_13</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1891,7 +1930,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="6769c5f0-e9da-47b7-9353-387c7dcfd0a2">
+                <ECUC-CONTAINER-VALUE UUID="787a2821-8c92-48b4-b817-0aa34b25770a">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_14</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1907,7 +1946,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="57b93e6c-1990-43ca-af83-5eeb43313124">
+                <ECUC-CONTAINER-VALUE UUID="c0a403a2-96f6-4e32-bf49-1bc186c55c40">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_15</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1923,7 +1962,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="facab0fa-3aa8-40d9-b7f1-b3a4445c5831">
+                <ECUC-CONTAINER-VALUE UUID="5c1b7b7b-515b-4de7-91b3-a73f7c2d3d38">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_16</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1939,7 +1978,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="29a7e569-b580-41fb-9d04-b65d5bb29f8e">
+                <ECUC-CONTAINER-VALUE UUID="bed7179a-96c1-4464-894b-620decd80765">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_17</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1955,7 +1994,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="c5fd6611-60a9-4d67-b2be-f42454d2e54f">
+                <ECUC-CONTAINER-VALUE UUID="7168ed40-0fba-4d58-acf0-586943f209c9">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_18</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1971,7 +2010,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="9ed0fed1-8af1-4479-add1-e20cedce029d">
+                <ECUC-CONTAINER-VALUE UUID="d70b6d84-b1bd-499d-a6b5-60642c8ddc11">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_19</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -1987,7 +2026,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="7fab87bf-39f9-42dc-9bf6-ed39bdd74213">
+                <ECUC-CONTAINER-VALUE UUID="39da017f-2d27-4259-8be0-e58b3b4b6404">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_20</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -2003,7 +2042,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="6c394ed3-bc2d-4f24-80e9-653fb337fa57">
+                <ECUC-CONTAINER-VALUE UUID="9e9b8399-f02e-4676-8d95-64920f940db2">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_21</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -2019,7 +2058,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="c8d74b98-fc73-4862-b3ce-eb233a0450d1">
+                <ECUC-CONTAINER-VALUE UUID="37c7376a-0b93-48ca-b3c6-57849a777ce6">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_22</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -2035,7 +2074,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="0829a440-96cd-4647-ab89-4b3d95beb256">
+                <ECUC-CONTAINER-VALUE UUID="64765d2d-d4d3-4d5f-b9d4-a488966a77e9">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_23</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -2051,7 +2090,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="cc104921-eaf2-4617-8f9c-f802d179bee3">
+                <ECUC-CONTAINER-VALUE UUID="8c2a5ce1-4a8d-4b59-8fbe-bdf452c59f30">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_24</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -2067,7 +2106,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="21019bf1-2861-4bc8-9def-2e1835eb4848">
+                <ECUC-CONTAINER-VALUE UUID="d63c5ca6-761f-4004-bcb6-6c85383a5193">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_25</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -2083,7 +2122,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="33984adc-249d-4fdd-9696-aa897a6b6298">
+                <ECUC-CONTAINER-VALUE UUID="68e337b0-3dd1-4f12-b4b2-7e3606964695">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_26</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -2099,7 +2138,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="02936359-621b-4525-9c72-70eba7f828fc">
+                <ECUC-CONTAINER-VALUE UUID="2ded6eed-133b-4bcc-9370-5ef2ba0cb846">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_27</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -2115,7 +2154,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="1c7e2575-23db-40dd-ad89-d7edb00c7576">
+                <ECUC-CONTAINER-VALUE UUID="05d2cdf5-27ee-4b2e-ab85-b29b197e5276">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_28</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -2131,7 +2170,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="cfe14118-e245-4840-92d7-e6ace677f40d">
+                <ECUC-CONTAINER-VALUE UUID="8d11065e-7331-4c3c-a2d6-4cd56c78d9d7">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_29</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -2147,7 +2186,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="4811ccac-3f87-4e95-b4ca-68abbb7af76b">
+                <ECUC-CONTAINER-VALUE UUID="ebd92430-1765-4712-ba67-9edfa4844d64">
                   <SHORT-NAME>MCU_EXCLUSIVE_AREA_30</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteBswModuleInstance/RteBswExclusiveAreaImpl</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -2162,6 +2201,101 @@
                       <VALUE-REF DEST="EXCLUSIVE-AREA">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_30</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="a3cbaf53-e2a0-47d9-8938-665627f197ce">
+              <SHORT-NAME>Test_swc_EcuSwComposition</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance</DEFINITION-REF>
+              <REFERENCE-VALUES>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteSoftwareComponentInstanceRef</DEFINITION-REF>
+                  <VALUE-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Test_swc</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+              </REFERENCE-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="d8024d24-65cc-4787-b30b-382378208068">
+                  <SHORT-NAME>Test_swc_InitEvent</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteImmediateRestart</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RtePositionInTask</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteEventRef</DEFINITION-REF>
+                      <VALUE-REF DEST="INIT-EVENT">/ComponentTypes/Test_swc/Test_swc_InternalBehavior/Test_swc_InitEvent</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteMappedToTaskRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/OsTask_swc_Init</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="0be4f065-560c-4578-ad1c-19f5ace0c1fb">
+                  <SHORT-NAME>TMT_Test_swc_10ms</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteImmediateRestart</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RtePositionInTask</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteEventRef</DEFINITION-REF>
+                      <VALUE-REF DEST="TIMING-EVENT">/ComponentTypes/Test_swc/Test_swc_InternalBehavior/TMT_Test_swc_10ms</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteMappedToTaskRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/OsTask_swc_Task</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteUsedOsAlarmRef</DEFINITION-REF>
+                      <ANNOTATIONS>
+                        <ANNOTATION>
+                          <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
+                        </ANNOTATION>
+                      </ANNOTATIONS>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_Test_swc_Test_swc_10ms</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="ffcd7716-d324-4076-b63e-8be552805325">
+              <SHORT-NAME>Test_swc</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentType</DEFINITION-REF>
+              <REFERENCE-VALUES>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentType/RteComponentTypeRef</DEFINITION-REF>
+                  <VALUE-REF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/Test_swc</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FOREIGN-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentType/RteImplementationRef</DEFINITION-REF>
+                  <VALUE-REF DEST="SWC-IMPLEMENTATION">/ComponentTypes/Test_swc_Implementation</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+              </REFERENCE-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="ea3acaff-5818-4395-9189-0d39871d3f7d">
+                  <SHORT-NAME>ComponentTypeCalibration</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteSwComponentType/RteComponentTypeCalibration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/MICROSAR/Rte/RteSwComponentType/RteComponentTypeCalibration/RteCalibrationSupportEnabled</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>

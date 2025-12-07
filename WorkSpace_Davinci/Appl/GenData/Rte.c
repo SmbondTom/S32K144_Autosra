@@ -34,6 +34,7 @@
 #include "Rte_Det.h"
 #include "Rte_EcuM.h"
 #include "Rte_Os_OsCore0_swc.h"
+#include "Rte_Test_swc.h"
 #include "SchM_BswM.h"
 #include "SchM_Det.h"
 #include "SchM_Dio.h"
@@ -80,6 +81,19 @@
 #else
 # define Rte_EnableOSInterrupts() ResumeOSInterrupts()   /* AUTOSAR OS */
 #endif
+
+
+/**********************************************************************************************************************
+ * Buffers for unqueued S/R
+ *********************************************************************************************************************/
+
+#define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
+#include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+VAR(BswM_ESH_RunRequest, RTE_VAR_NOINIT) Rte_Test_swc_Request_ESH_RunRequest_0_requestedMode; /* PRQA S 0850, 3408, 1504 */ /* MD_MSR_19.8, MD_Rte_3408, MD_MSR_8.10 */
+
+#define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+#include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 
 
 /**********************************************************************************************************************
@@ -183,6 +197,9 @@ FUNC(void, RTE_CODE) SchM_Init(void)
 
 FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
+  /* set default values for internal data */
+  Rte_Test_swc_Request_ESH_RunRequest_0_requestedMode = 0U;
+
   /* reset Tx Ack Flags */
   Rte_AckFlagsInit();
   Rte_AckFlags.Rte_ModeSwitchAck_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_Ack = 1;
@@ -191,11 +208,20 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void) /* PRQA S 0850 */ /* MD_MSR_19.8 
 
   Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode = RTE_MODE_BswM_ESH_Mode_STARTUP;
 
+  /* activate the tasks */
+  (void)ActivateTask(OsTask_swc_Init); /* PRQA S 3417 */ /* MD_Rte_Os */
+
+  /* activate the alarms used for TimingEvents */
+  (void)SetRelAlarm(Rte_Al_TE_Test_swc_Test_swc_10ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(10)); /* PRQA S 3417 */ /* MD_Rte_Os */
+
   return RTE_E_OK;
 } /* PRQA S 6050 */ /* MD_MSR_STCAL */
 
 FUNC(Std_ReturnType, RTE_CODE) Rte_Stop(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
+  /* deactivate alarms */
+  (void)CancelAlarm(Rte_Al_TE_Test_swc_Test_swc_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+
   return RTE_E_OK;
 }
 
@@ -229,11 +255,13 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Read_BswM_Request_ESH_PostRunRequest_1_reques
   return RTE_E_UNCONNECTED;
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
 
-FUNC(Std_ReturnType, RTE_CODE) Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode(P2VAR(BswM_ESH_RunRequest, AUTOMATIC, RTE_BSWM_APPL_VAR) data) /* PRQA S 0850, 3673, 1505, 3206 */ /* MD_MSR_19.8, MD_Rte_Qac, MD_MSR_8.10, MD_Rte_3206 */
+FUNC(Std_ReturnType, RTE_CODE) Rte_Read_BswM_Request_ESH_RunRequest_0_requestedMode(P2VAR(BswM_ESH_RunRequest, AUTOMATIC, RTE_BSWM_APPL_VAR) data) /* PRQA S 0850, 3673, 1505 */ /* MD_MSR_19.8, MD_Rte_Qac, MD_MSR_8.10 */
 {
-  *data = 0U;
+  Std_ReturnType ret = RTE_E_OK;
 
-  return RTE_E_UNCONNECTED;
+  *(data) = Rte_Test_swc_Request_ESH_RunRequest_0_requestedMode;
+
+  return ret;
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
 
 FUNC(Std_ReturnType, RTE_CODE) Rte_Read_BswM_Request_ESH_RunRequest_1_requestedMode(P2VAR(BswM_ESH_RunRequest, AUTOMATIC, RTE_BSWM_APPL_VAR) data) /* PRQA S 0850, 3673, 1505, 3206 */ /* MD_MSR_19.8, MD_Rte_Qac, MD_MSR_8.10, MD_Rte_3206 */
@@ -1126,6 +1154,35 @@ TASK(OsTask_Bsw) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1 */
       EcuM_MainFunction();
     }
   }
+} /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
+
+/**********************************************************************************************************************
+ * Task:     OsTask_swc_Init
+ * Priority: 0
+ * Schedule: FULL
+ *********************************************************************************************************************/
+TASK(OsTask_swc_Init) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1 */
+{
+
+  /* call runnable */
+  Test_swc_Init();
+
+  (void)TerminateTask(); /* PRQA S 3417 */ /* MD_Rte_Os */
+} /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
+
+/**********************************************************************************************************************
+ * Task:     OsTask_swc_Task
+ * Priority: 0
+ * Schedule: FULL
+ * Alarm:    Cycle Time 0.01 s Alarm Offset 0 s
+ *********************************************************************************************************************/
+TASK(OsTask_swc_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1 */
+{
+
+  /* call runnable */
+  Test_swc_10ms();
+
+  (void)TerminateTask(); /* PRQA S 3417 */ /* MD_Rte_Os */
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
 
 #define RTE_STOP_SEC_CODE

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_MemMap.h
- *   Generation Time: 2025-12-04 19:59:54
+ *   Generation Time: 2025-12-07 20:44:14
  *           Project: Autosar_MinSystem - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -147,6 +147,62 @@
 # undef OS_OsTask_Init_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # pragma default_function_attributes = /* PRQA S 3116 */ /* MD_MSR_1.1 */
 # undef OS_STOP_SEC_OsTask_Init_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#endif
+
+#ifdef OS_START_SEC_OsTask_swc_Init_CODE /* PRQA S 0883 */ /* MD_Os_0883 */
+# ifdef OS_MEMMAP_SECTION_OPEN
+#  error A MemMap section is already open. Nesting is not supported.
+# endif
+# define OS_MEMMAP_SECTION_OPEN
+# define OS_OsTask_swc_Init_CODE_OPEN
+# ifndef MEMMAP_ERROR
+#  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
+# endif
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# pragma default_function_attributes = @ ".OS_OsTask_swc_Init_CODE" /* PRQA S 0289, 3116 */ /* MD_Os_0289_LinkerSymbol, MD_MSR_1.1 */
+# undef OS_START_SEC_OsTask_swc_Init_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#endif
+
+#ifdef OS_STOP_SEC_OsTask_swc_Init_CODE /* PRQA S 0883 */ /* MD_Os_0883 */
+# ifndef OS_MEMMAP_SECTION_OPEN
+#  error No MemMap section is currently opened.
+# endif
+# undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# ifndef OS_OsTask_swc_Init_CODE_OPEN
+#  error Section OS_OsTask_swc_Init_CODE is currently not opened and so cannot be closed.
+# endif
+# undef OS_OsTask_swc_Init_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# pragma default_function_attributes = /* PRQA S 3116 */ /* MD_MSR_1.1 */
+# undef OS_STOP_SEC_OsTask_swc_Init_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#endif
+
+#ifdef OS_START_SEC_OsTask_swc_Task_CODE /* PRQA S 0883 */ /* MD_Os_0883 */
+# ifdef OS_MEMMAP_SECTION_OPEN
+#  error A MemMap section is already open. Nesting is not supported.
+# endif
+# define OS_MEMMAP_SECTION_OPEN
+# define OS_OsTask_swc_Task_CODE_OPEN
+# ifndef MEMMAP_ERROR
+#  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
+# endif
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# pragma default_function_attributes = @ ".OS_OsTask_swc_Task_CODE" /* PRQA S 0289, 3116 */ /* MD_Os_0289_LinkerSymbol, MD_MSR_1.1 */
+# undef OS_START_SEC_OsTask_swc_Task_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#endif
+
+#ifdef OS_STOP_SEC_OsTask_swc_Task_CODE /* PRQA S 0883 */ /* MD_Os_0883 */
+# ifndef OS_MEMMAP_SECTION_OPEN
+#  error No MemMap section is currently opened.
+# endif
+# undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# ifndef OS_OsTask_swc_Task_CODE_OPEN
+#  error Section OS_OsTask_swc_Task_CODE is currently not opened and so cannot be closed.
+# endif
+# undef OS_OsTask_swc_Task_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# pragma default_function_attributes = /* PRQA S 3116 */ /* MD_MSR_1.1 */
+# undef OS_STOP_SEC_OsTask_swc_Task_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
 #endif
 

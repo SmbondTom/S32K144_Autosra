@@ -50,7 +50,7 @@
         <FlatMap>.\Config\System\FlatMap.arxml</FlatMap>
         <FlatECUEX>.\Config\System\FlatExtract.arxml</FlatECUEX>
         <EcucFileReferences>
-            <FileReference>G:\AutoProject144\S32k144_MinSystem_1\Mcal_Project\s32k144_mcal.arxml</FileReference>
+            <FileReference>G:\AutoProject144\S32k144_MinSystem\WorkSpace_EBTresos\s32k144_mcal.arxml</FileReference>
         </EcucFileReferences>
     </References>
     <EcucSplitter>
@@ -80,8 +80,10 @@
             <Module Name="Port"/>
             <Module Name="Port"/>
             <Module Name="Port"/>
+            <Module Name="Port"/>
         </Splitter>
         <Splitter File=".\Config\ECUC\Autosar_MinSystem_Dio_ecuc.arxml">
+            <Module Name="Dio"/>
             <Module Name="Dio"/>
             <Module Name="Dio"/>
             <Module Name="Dio"/>
@@ -90,13 +92,16 @@
             <Module Name="Base"/>
             <Module Name="Base"/>
             <Module Name="Base"/>
+            <Module Name="Base"/>
         </Splitter>
         <Splitter File=".\Config\ECUC\Autosar_MinSystem_Resource_ecuc.arxml">
             <Module Name="Resource"/>
             <Module Name="Resource"/>
             <Module Name="Resource"/>
+            <Module Name="Resource"/>
         </Splitter>
         <Splitter File=".\Config\ECUC\Autosar_MinSystem_Mcu_ecuc.arxml">
+            <Module Name="Mcu"/>
             <Module Name="Mcu"/>
             <Module Name="Mcu"/>
             <Module Name="Mcu"/>
@@ -239,5 +244,7 @@
         <AmdGenerateDebugData>false</AmdGenerateDebugData>
         <AutomaticSyncSystemDescription>false</AutomaticSyncSystemDescription>
     </Miscellaneous>
-    <SwctGeneration/>
+    <SwctGeneration>
+        <Component Name="Test_swc" GenerationEnabled="true"/>
+    </SwctGeneration>
 </ProjectAssistant>

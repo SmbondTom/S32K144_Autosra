@@ -65,6 +65,22 @@
                                   <SHORT-NAME>Os_OsCore0_swc</SHORT-NAME>
                                   <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Os_swc/ComponentTypes/Os_OsCore0_swc</TYPE-TREF>
                                 </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="87bec412-d351-4366-bd20-35c057a8f70a">
+                                  <SHORT-NAME>Test_swc</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/Test_swc</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
                               </COMPONENTS>
                               <CONNECTORS>
                                 <ASSEMBLY-SW-CONNECTOR UUID="250501c3-45a9-417c-a23b-e6cd0c2d5832">
@@ -76,6 +92,17 @@
                                   <REQUESTER-IREF>
                                     <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
                                     <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_ESH_ModeNotification</TARGET-R-PORT-REF>
+                                  </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="d62d4822-aa62-4c0b-afd3-c489a486ea8d">
+                                  <SHORT-NAME>Test_swc_Request_ESH_RunRequest_0_BswM_Request_ESH_RunRequest_0</SHORT-NAME>
+                                  <PROVIDER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Test_swc</CONTEXT-COMPONENT-REF>
+                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Test_swc/Request_ESH_RunRequest_0</TARGET-P-PORT-REF>
+                                  </PROVIDER-IREF>
+                                  <REQUESTER-IREF>
+                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</CONTEXT-COMPONENT-REF>
+                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Request_ESH_RunRequest_0</TARGET-R-PORT-REF>
                                   </REQUESTER-IREF>
                                 </ASSEMBLY-SW-CONNECTOR>
                               </CONNECTORS>
@@ -110,10 +137,19 @@
                                     <SD GID="b706f2d8-3656-4b5f-9f73-0eded18bd156">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
                                     <SD GID="c5032df6-4cf8-4931-a6c1-9f3b6d06072a">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
                                     <SD GID="c7910871-1ac9-4a39-912e-def61abb60c7">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Os_OsCore0_swc</SD>
+                                    <SD GID="87bec412-d351-4366-bd20-35c057a8f70a">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Test_swc</SD>
+                                    <SD GID="d62d4822-aa62-4c0b-afd3-c489a486ea8d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Test_swc_Request_ESH_RunRequest_0_BswM_Request_ESH_RunRequest_0</SD>
                                     <SD GID="cf294e37-91e4-4b2c-bf1c-06d956e9022f">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
                                     <SD GID="37881c5a-9583-4eb9-b38b-d89cafc291f5">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM</SD>
+                                    <SD GID="2c24149f-5355-47e5-bc53-cb925358044d">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</SD>
+                                    <SD GID="5E2BD63C-DACF-44AD-B265-CDE47BB8EE65">/ComponentTypes/Test_swc</SD>
+                                    <SD GID="A06952B5-E03E-4630-B196-1E6FD16ED1C2">/ComponentTypes/Test_swc/Request_ESH_RunRequest_0</SD>
+                                    <SD GID="36A4A181-7884-492A-AF19-72E51C66CC9E">/ComponentTypes/Test_swc/Test_swc_InternalBehavior/TMT_Test_swc_10ms</SD>
+                                    <SD GID="C6CD1753-75DE-44FE-B1E3-98B7B8CBE973">/ComponentTypes/Test_swc/Test_swc_InternalBehavior/Test_swc_InitEvent</SD>
+                                    <SD GID="0B3E5C5B-7FA3-4EF1-85BF-E7CDB1A51D38">/ComponentTypes/Test_swc_Implementation</SD>
                                     <SD GID="ceb42dfe-26e7-442a-8a8f-3366172ad87c">/Dio</SD>
                                     <SD GID="156C0F2E-A200-43F4-A62B-12D890677941">/ECUCompositionTypes/ECU_Composition</SD>
+                                    <SD GID="918EDFE4-E78E-4B89-90F5-7954F0B828ED">/ECUCompositionTypes/ECU_Composition/Test_swc</SD>
                                     <SD GID="d0bd0809-7f2f-46c3-b3f4-939ffa8756c4">/MICROSAR/BswM_ib_bswmd</SD>
                                     <SD GID="3cd34559-6e23-4e86-bab2-326cc17323b9">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions</SD>
                                     <SD GID="160d4c38-54da-4309-8cbe-28a7a90bec44">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
@@ -337,108 +373,109 @@
                                     <SD GID="B0DF499C-5446-40C9-BA84-69FE6BBA9AFA">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
                                     <SD GID="6C11D3FD-1F97-4F18-9F28-AEBD06095420">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_SRBS/E_NOT_OK</SD>
                                     <SD GID="dc0797af-b807-4ab0-b6be-45156c390801">/Resource</SD>
-                                    <SD GID="50512ced-c65a-471c-b794-8c9a0f232d93">/TS_T40D2M10I1R0/Dio_ib_bswmd</SD>
-                                    <SD GID="fec5e2cb-e091-4ca3-9c15-d4fc6ef4c24d">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions</SD>
-                                    <SD GID="b7bdb31b-1a6c-4ad7-9c01-de02dc05e60f">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior</SD>
-                                    <SD GID="9483e348-2713-4738-9423-dd5c135cc009">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_00</SD>
-                                    <SD GID="c7224db0-651a-4193-b3a0-981de1208c12">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_01</SD>
-                                    <SD GID="155ab548-28c3-4c22-abbd-ec2658aefcae">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_02</SD>
-                                    <SD GID="2d9ae294-b20a-4ff2-90b4-e385ece2390c">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_03</SD>
-                                    <SD GID="852b36ec-af0f-44eb-917e-6810ad09cc57">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_04</SD>
-                                    <SD GID="8b56f839-b5b3-49c8-ac6a-17a37e92220d">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_05</SD>
-                                    <SD GID="505747e0-0878-468a-9cd8-a02a0e7250d7">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_06</SD>
-                                    <SD GID="cd8ebf7a-324a-4ec9-80ae-8e7abd8dbcb6">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_07</SD>
-                                    <SD GID="3df6402a-7e49-4cf6-97c5-d76255f4e933">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_08</SD>
-                                    <SD GID="ec271f9c-735a-4bb8-b27b-e8ea928926c7">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_09</SD>
-                                    <SD GID="30095f4f-4007-45ca-8584-79939c90bbf2">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_10</SD>
-                                    <SD GID="ed1a7da2-3d17-4fc9-8792-043549a871be">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_11</SD>
-                                    <SD GID="7f5eed24-960d-441f-8419-45dacbf13b4d">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_12</SD>
-                                    <SD GID="126877c5-35a3-4ce4-a202-c640a26ef372">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_13</SD>
-                                    <SD GID="85f25856-dc57-4134-b160-30ab636b8e72">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_14</SD>
-                                    <SD GID="fe320bc3-61e9-43fb-b4a9-7fb79dcf9ff5">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_15</SD>
-                                    <SD GID="803becef-80c4-437b-b75d-b1e6e0d7e209">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_16</SD>
-                                    <SD GID="f57d4852-3120-4a66-a18f-6f9c9b289bc2">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_17</SD>
-                                    <SD GID="508ca331-a5ee-40f6-ad3a-e068ae899e13">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_18</SD>
-                                    <SD GID="c7c42ef5-49ea-49e8-a817-dba521c41bd2">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_19</SD>
-                                    <SD GID="0d59de16-7088-4911-9fb4-5d437d759c5e">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_20</SD>
-                                    <SD GID="7e1233af-2484-4b75-8bb7-bde109e00d63">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_21</SD>
-                                    <SD GID="c1290c3a-6676-4931-9e73-59df0c16d12c">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_22</SD>
-                                    <SD GID="c5d7b5dc-71fd-43fa-87cc-9dbe298687a7">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_23</SD>
-                                    <SD GID="4f00fa85-c444-40b1-9688-dee1b6ac2142">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_24</SD>
-                                    <SD GID="004a634d-8493-4671-aab3-f2133f0dd11f">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_25</SD>
-                                    <SD GID="375f42e7-0830-4e40-ac92-e6e8b03e9d79">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_26</SD>
-                                    <SD GID="5f7ba353-f057-46b8-a615-a3a9184abb7b">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_27</SD>
-                                    <SD GID="31f1c9b0-065f-48e6-b979-85a14c1ded4a">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_28</SD>
-                                    <SD GID="1ccc9eac-a9f3-4c08-81a1-8c4e49f531f1">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_29</SD>
-                                    <SD GID="195ce1ca-144c-487d-867a-2306a4aeb587">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_30</SD>
-                                    <SD GID="f0dbd991-dc22-466b-9841-1cebfb9ff343">/TS_T40D2M10I1R0/Mcu_ib_bswmd</SD>
-                                    <SD GID="ad0ce32f-4f63-4316-9cf5-536b52cf3551">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions</SD>
-                                    <SD GID="25c29f48-47e7-4cc6-aef6-8882ac2ba0c0">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior</SD>
-                                    <SD GID="eae60323-d2cf-4e6e-ab82-53ac07fc2b97">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_00</SD>
-                                    <SD GID="b6f10da2-0978-4f66-af31-8f1a44e75fda">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_01</SD>
-                                    <SD GID="b680c238-25a9-4df2-ad3a-b923e09ced97">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_02</SD>
-                                    <SD GID="5b638e6f-ae15-4ef9-ba59-3707b6cdf82d">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_03</SD>
-                                    <SD GID="8f580878-926b-4000-8849-10a40ffca69a">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_04</SD>
-                                    <SD GID="c517cdc4-1b3f-433d-8993-e5065604707a">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_05</SD>
-                                    <SD GID="ee57e589-b2b4-4deb-b64c-5f29e08ccd8e">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_06</SD>
-                                    <SD GID="9b6ef0bd-6e6d-41af-8f77-537e3410d71f">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_07</SD>
-                                    <SD GID="4effbc24-273a-4c3c-b00c-56aa4b1e7841">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_08</SD>
-                                    <SD GID="1ec4a2e2-d594-416d-9a17-0a7257c63e8e">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_09</SD>
-                                    <SD GID="3333459a-d20a-4341-bfef-f0f2e569bdf0">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_10</SD>
-                                    <SD GID="ebbfa051-d731-4f5a-abda-83b235d43cde">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_11</SD>
-                                    <SD GID="fa90b397-0092-4f6d-baf3-eae1ae3eceb8">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_12</SD>
-                                    <SD GID="888f321a-298f-4b62-86a0-559f45542ee2">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_13</SD>
-                                    <SD GID="aa261ae2-ac11-451d-b365-2b15cf3694bd">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_14</SD>
-                                    <SD GID="9c9bd2ff-4a55-4b8d-be29-aab65651410f">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_15</SD>
-                                    <SD GID="00e273f5-222f-4ac7-ae5e-7f17cba8ff46">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_16</SD>
-                                    <SD GID="06a62da4-9624-40c6-9a74-de28dcc9d5d0">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_17</SD>
-                                    <SD GID="96f3f010-1710-4ef6-b2e7-112d10b37dc7">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_18</SD>
-                                    <SD GID="1e565a79-fe76-4b1a-8aeb-f2b5fce72df8">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_19</SD>
-                                    <SD GID="1e1a6e57-93c8-4478-aa98-2454e38484a2">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_20</SD>
-                                    <SD GID="8099b8d1-cb45-4629-b81f-0ddde171b81b">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_21</SD>
-                                    <SD GID="abdf6d41-4d27-4c16-9b7e-eee12e86ce83">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_22</SD>
-                                    <SD GID="a097311c-c42b-45ab-8bd8-421cd647022f">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_23</SD>
-                                    <SD GID="d90f85f9-2a15-424a-af2a-32e0ad467923">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_24</SD>
-                                    <SD GID="6d04bffe-f726-4794-a73d-e2c64b323fe7">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_25</SD>
-                                    <SD GID="fadb0377-e3cc-457f-a718-ffc64b0b65dc">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_26</SD>
-                                    <SD GID="a77dc9cc-4f4e-496c-8657-18e71d712a6a">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_27</SD>
-                                    <SD GID="baabe7ff-4888-4829-99b8-0969476aec96">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_28</SD>
-                                    <SD GID="350b4fa8-23bc-4021-9346-ef63d0a503c0">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_29</SD>
-                                    <SD GID="fdca42cf-7c17-46fb-86f1-b1dc697af7c6">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_30</SD>
-                                    <SD GID="f12eb0cc-84e1-47e8-a973-47da14612435">/TS_T40D2M10I1R0/Port_ib_bswmd</SD>
-                                    <SD GID="6c16b701-8992-4d53-962e-1fec3fb2ef50">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions</SD>
-                                    <SD GID="ce413242-6f8a-4c41-9ac6-9fd072a2ad2c">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior</SD>
-                                    <SD GID="48c4bb0b-1ab4-4be3-8c70-7fb7817fc03a">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_00</SD>
-                                    <SD GID="f00ba497-8d6e-41f1-b521-d44826dd7973">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_01</SD>
-                                    <SD GID="da484e8c-1b82-4592-b1f1-a4dae86cf104">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_02</SD>
-                                    <SD GID="6fa80757-b174-461b-9413-c33c2e276978">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_03</SD>
-                                    <SD GID="4ed3c916-cff9-427d-addd-4a2ae33b67b0">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_04</SD>
-                                    <SD GID="2ea63018-3883-4fc4-87ae-f281bd0b99c4">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_05</SD>
-                                    <SD GID="38c4b552-1acb-4389-add6-fa56d685d61e">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_06</SD>
-                                    <SD GID="c552f8b4-9b65-4cca-9997-4a2d623337ac">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_07</SD>
-                                    <SD GID="83f56954-8776-4bbe-ae4c-9aa66b36021e">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_08</SD>
-                                    <SD GID="26848537-f0a3-4ed6-9bbc-a90980644558">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_09</SD>
-                                    <SD GID="7a7f1a79-1e13-4c26-b091-6767ff906f43">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_10</SD>
-                                    <SD GID="872942e4-0df1-4e69-b168-757db20ecf26">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_11</SD>
-                                    <SD GID="7244346d-e3f9-43b0-81ec-7dc81cc20729">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_12</SD>
-                                    <SD GID="7673b1c9-e6cf-40fe-aba1-f380737346a6">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_13</SD>
-                                    <SD GID="1cea9429-7e2d-4afe-931f-3b4a330604f1">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_14</SD>
-                                    <SD GID="0454da36-04f6-482e-93d8-7cf3846fcafd">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_15</SD>
-                                    <SD GID="991aba5a-df50-48fe-85cf-bfcf83c32853">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_16</SD>
-                                    <SD GID="1a8d0d39-aff1-4638-afae-666c13832073">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_17</SD>
-                                    <SD GID="0d09bb1b-fb10-40a1-8fd4-ef05ba455a8c">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_18</SD>
-                                    <SD GID="d4762ba1-afdb-431b-a499-7e23c7abad23">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_19</SD>
-                                    <SD GID="45cea782-2138-43ee-8bea-e1c01d1f12f6">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_20</SD>
-                                    <SD GID="afe7c8e5-58b1-4267-9d86-420233f0944a">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_21</SD>
-                                    <SD GID="05fecad9-3e7e-449e-b8f5-435132dcffc8">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_22</SD>
-                                    <SD GID="144845c4-ba84-4242-8cf1-b47c7297bb35">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_23</SD>
-                                    <SD GID="cb4877c6-845c-4084-b5ae-bbd0d5bf57f2">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_24</SD>
-                                    <SD GID="c8e59a2c-bd02-4aa1-9a1d-223f2bf0c13b">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_25</SD>
-                                    <SD GID="7dece559-071d-41e3-86fd-badef849b719">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_26</SD>
-                                    <SD GID="91e8f0e4-8bac-4a03-97fa-51f07b6e9ebb">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_27</SD>
-                                    <SD GID="f2f756bf-c545-4a8d-a6d4-ec13ab9644d4">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_28</SD>
-                                    <SD GID="d28b5dde-4437-453a-ae3f-3c70619ab31d">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_29</SD>
-                                    <SD GID="e5ae5d74-07f6-4abf-a506-412eaf74c664">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_30</SD>
+                                    <SD GID="019764FE-A95D-4DE3-8C5A-E4881C3B60D0">/Systems/Autosar_MinSystem/EcuSwComposition</SD>
+                                    <SD GID="038f3c57-398d-428b-96d7-6fcfa58e79df">/TS_T40D2M10I1R0/Dio_ib_bswmd</SD>
+                                    <SD GID="d1591795-b4b9-4be5-a88f-382f95f64a5a">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="0dcfe6d4-1b18-4e73-8845-7c09d7777314">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior</SD>
+                                    <SD GID="28b263fb-f90b-4773-b9d5-4ca3b0bbfcf9">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_00</SD>
+                                    <SD GID="1e0f5673-b992-4acd-93c1-1d93688853b5">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_01</SD>
+                                    <SD GID="a006a8d1-55b0-48d8-8cb5-de88b79a1711">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_02</SD>
+                                    <SD GID="a2fbe6bf-c60b-472b-961f-a210804a0dd1">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_03</SD>
+                                    <SD GID="bb3d92c4-dfb8-457a-b67d-ef391bc880ff">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_04</SD>
+                                    <SD GID="ef91d606-1842-47b3-8c1a-322a018a804c">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_05</SD>
+                                    <SD GID="67875d2e-71a2-4742-af79-34ca1763f01d">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_06</SD>
+                                    <SD GID="7e2cb841-e51b-4c12-8fdc-62f8c872df04">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_07</SD>
+                                    <SD GID="d06c227c-37e8-4f4a-8a5c-bd927b6ab03e">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_08</SD>
+                                    <SD GID="e6c3f58a-c84b-49da-b216-a7c716eb2823">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_09</SD>
+                                    <SD GID="2e40bd10-a1a7-413e-925d-e62a97e54850">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_10</SD>
+                                    <SD GID="17cf94f0-a7e4-455f-9dda-e4e9f7db9810">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_11</SD>
+                                    <SD GID="ed6cc76f-71c8-4196-ad01-0b562f31c317">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_12</SD>
+                                    <SD GID="0224d326-5a32-40ad-9af6-6591e4609165">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_13</SD>
+                                    <SD GID="dabbebb4-30ae-4d98-bf91-9fbcb31d92a5">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_14</SD>
+                                    <SD GID="085b25a7-9bb9-4055-b1b9-88ef8fee66b3">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_15</SD>
+                                    <SD GID="a54ca58b-4942-4196-912e-26d475dd18c6">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_16</SD>
+                                    <SD GID="283bef6d-504e-47f3-b112-57123d8b3620">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_17</SD>
+                                    <SD GID="883a033f-e6cf-45ff-b1a7-839e3edd0f67">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_18</SD>
+                                    <SD GID="dc3fb7aa-0b57-412a-9c43-87a3115bb17e">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_19</SD>
+                                    <SD GID="a92efba4-0ded-40eb-ace3-4c7f991d6e94">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_20</SD>
+                                    <SD GID="c3ce1ec2-2eb7-42e5-be00-3b7ea987027b">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_21</SD>
+                                    <SD GID="02ff1d59-116f-4444-be73-7aaebc904d2d">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_22</SD>
+                                    <SD GID="e8d22f5e-5079-48ed-8d74-17df43fb3ae6">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_23</SD>
+                                    <SD GID="07a647fd-b875-4d3d-b25f-7b80b4285406">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_24</SD>
+                                    <SD GID="3dac68fc-3c3e-4a63-b4c3-391c9f76a7ee">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_25</SD>
+                                    <SD GID="f87c850c-da9d-4dbe-adc1-68a4e0da586d">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_26</SD>
+                                    <SD GID="f3df038b-9667-45e8-849d-de0780b8b367">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_27</SD>
+                                    <SD GID="6bcef229-fb53-4999-84a1-626c5b4f5121">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_28</SD>
+                                    <SD GID="b584b0fd-eb8c-4d46-84b9-9b3c67915af5">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_29</SD>
+                                    <SD GID="0a670e20-a5c7-4df6-8726-6eefb8dff534">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_30</SD>
+                                    <SD GID="9a60df90-febd-43ca-9578-da52d8da6c24">/TS_T40D2M10I1R0/Mcu_ib_bswmd</SD>
+                                    <SD GID="d95b7ee9-e33c-439c-980f-5431083c166a">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="cf997369-1fce-485c-8e24-65a31786796a">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior</SD>
+                                    <SD GID="9ce8588b-72e4-424a-b8a6-cc5cd43cb30b">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_00</SD>
+                                    <SD GID="88a233d7-2136-4f55-91b5-5cb29ba66598">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_01</SD>
+                                    <SD GID="98433819-c524-4b63-90f7-476d8e2c861e">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_02</SD>
+                                    <SD GID="dacb666e-1b3d-4d46-b75b-be3a818e7adf">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_03</SD>
+                                    <SD GID="454eecae-8930-4efa-9032-6d407dd67876">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_04</SD>
+                                    <SD GID="ee8dc71e-895b-4325-bba0-79e66e2f3e1e">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_05</SD>
+                                    <SD GID="3e4c856e-70e9-423c-8f77-884d13a00631">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_06</SD>
+                                    <SD GID="0368e53e-7738-48e0-bca7-2732ca9e8304">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_07</SD>
+                                    <SD GID="674e31ad-26c5-48d4-a5d7-63f2108ca47d">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_08</SD>
+                                    <SD GID="48cda7d5-26aa-40a3-a069-2ed43dc679c2">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_09</SD>
+                                    <SD GID="c359367d-9166-439a-8ca6-4f1c3a162601">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_10</SD>
+                                    <SD GID="e2c5e54c-0f3d-44c5-889a-9c2738807a70">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_11</SD>
+                                    <SD GID="eaae9aba-c0de-4ea9-b5f5-3fea7180afa1">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_12</SD>
+                                    <SD GID="8f03baff-4870-4a8b-a549-e8bc31aacdcf">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_13</SD>
+                                    <SD GID="4b079d0e-3a8f-4181-8870-370341f8b549">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_14</SD>
+                                    <SD GID="e82d4a82-112e-457d-9b61-e618cf5b7af4">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_15</SD>
+                                    <SD GID="75586cb8-8ddc-4a2e-abd8-af182810e093">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_16</SD>
+                                    <SD GID="5c3209cb-8732-4e3b-87c5-410dfda54449">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_17</SD>
+                                    <SD GID="a6d2118e-78d2-49e1-8c0f-c23651b505bf">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_18</SD>
+                                    <SD GID="300c11b3-b57c-4e66-af2a-c263483076e6">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_19</SD>
+                                    <SD GID="cab615c9-3cf3-4391-9111-43cc0279a030">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_20</SD>
+                                    <SD GID="7a996199-ff83-434e-a0ad-bee0e1899b6f">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_21</SD>
+                                    <SD GID="c36ea0a5-5e53-4c63-b4a2-71e695ad610d">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_22</SD>
+                                    <SD GID="47124a1a-798f-4baa-8431-b7186a2a629d">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_23</SD>
+                                    <SD GID="0bdf273b-f1ff-4718-bc8d-e4fd41910ec3">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_24</SD>
+                                    <SD GID="5b8c2700-c1ff-4379-9914-1f08a6dc10e9">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_25</SD>
+                                    <SD GID="f8a7bf0d-1924-40ef-b9b4-1b68e7341943">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_26</SD>
+                                    <SD GID="45944ad6-dcf5-4867-a4d6-a867738002f1">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_27</SD>
+                                    <SD GID="d0073f79-9377-4d52-899e-a2a75093741f">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_28</SD>
+                                    <SD GID="f2fbe170-31b3-46e2-81a4-c114d7221ccb">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_29</SD>
+                                    <SD GID="92cda6e5-224c-4f12-8a7a-5d03f2d6d3bb">/TS_T40D2M10I1R0/Mcu_ib_bswmd/BswModuleDescriptions/Mcu/McuBehavior/MCU_EXCLUSIVE_AREA_30</SD>
+                                    <SD GID="5fa92143-f29c-4b40-a5d7-1be590c3e226">/TS_T40D2M10I1R0/Port_ib_bswmd</SD>
+                                    <SD GID="9605669f-8b9b-4220-a2f0-42b08d412926">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions</SD>
+                                    <SD GID="8fb79c68-067e-4456-8903-9a14c03ef6dd">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior</SD>
+                                    <SD GID="aef006a8-9ac9-46b1-8a21-edced06ea40a">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_00</SD>
+                                    <SD GID="ea62a6d9-4080-4e2b-b99b-7aa11b0dddb7">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_01</SD>
+                                    <SD GID="f07eeb8c-c543-4d04-995c-a5e3c1b1ccc6">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_02</SD>
+                                    <SD GID="b88fd535-929a-4c57-89e7-31636022e416">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_03</SD>
+                                    <SD GID="7eef1422-fafa-48a3-bfda-28cedcc41efa">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_04</SD>
+                                    <SD GID="2204ba8e-8830-4b33-add8-df88fd829d8b">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_05</SD>
+                                    <SD GID="bb5729ab-d5e5-430d-b06e-bcd3892449ac">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_06</SD>
+                                    <SD GID="c2c700e0-35ee-4bc7-8a73-107a50e20461">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_07</SD>
+                                    <SD GID="5c32acf7-8893-44fd-b457-61914ded2cc1">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_08</SD>
+                                    <SD GID="455e6673-4139-4a3a-a319-9013062866e6">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_09</SD>
+                                    <SD GID="0a7d7908-b6ff-4656-9b8b-52363126157c">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_10</SD>
+                                    <SD GID="e72aa91c-c51b-4c1a-be9e-e6888d8c7d61">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_11</SD>
+                                    <SD GID="c297b5ac-7248-4942-a96d-b82c6f3f54db">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_12</SD>
+                                    <SD GID="ddd9196a-0cc8-4abb-8ec2-c303daffec08">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_13</SD>
+                                    <SD GID="56c1cea8-0ed3-4e10-9aba-4b05a8c09eae">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_14</SD>
+                                    <SD GID="06d6fe59-76b3-4ba2-ab36-9189b53de645">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_15</SD>
+                                    <SD GID="df5ef4e5-6231-40d3-bee2-b8fbd224c4cf">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_16</SD>
+                                    <SD GID="ca055e7f-9b01-4b71-9561-828ee8485033">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_17</SD>
+                                    <SD GID="d94ed822-0d06-4e86-a4af-512a16e20066">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_18</SD>
+                                    <SD GID="ba188cb6-f760-4c59-b50a-fccfb38b2646">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_19</SD>
+                                    <SD GID="cc1d0af7-1397-4e7b-aede-df9c46c859b7">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_20</SD>
+                                    <SD GID="0fe49c6e-13d0-4087-913d-fc81617832be">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_21</SD>
+                                    <SD GID="1279fd31-fc45-44ed-9226-664fe3742d3c">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_22</SD>
+                                    <SD GID="efdeaa58-48d1-45c5-baca-4dbcd6537e8c">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_23</SD>
+                                    <SD GID="fb906aaa-2ee4-4bc8-97f0-510d4121f30a">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_24</SD>
+                                    <SD GID="442ec2b4-86c9-43db-a028-7e8d629ffe8a">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_25</SD>
+                                    <SD GID="eae6c1ba-aac8-4adf-b5a6-430c41c230b1">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_26</SD>
+                                    <SD GID="1bc619a8-db9a-42f2-b431-ad9c0ed6376b">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_27</SD>
+                                    <SD GID="1d3345b9-7f87-4b11-855f-554cb7811a33">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_28</SD>
+                                    <SD GID="bde16c4d-261d-4382-8f35-9aa72c4b564b">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_29</SD>
+                                    <SD GID="54264783-0806-4066-acc4-133e2a238f1d">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_30</SD>
                                   </SDG>
                                 </SDGS>
                               </ADMIN-DATA>

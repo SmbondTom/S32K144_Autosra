@@ -3334,6 +3334,9 @@
                     <file>
                         <name>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\Source\Os_Callout_Stubs.c</name>
                     </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\WorkSpace_Davinci\Appl\Source\Test_swc.c</name>
+                    </file>
                 </group>
             </group>
         </group>

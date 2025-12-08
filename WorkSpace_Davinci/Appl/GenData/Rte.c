@@ -159,6 +159,7 @@ VAR(BswM_ESH_Mode, RTE_VAR_NOINIT) Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_Bs
 
 #define RTE_CONST_MSEC_SystemTimer_0 (0UL)
 #define RTE_CONST_MSEC_SystemTimer_10 (10UL)
+#define RTE_CONST_MSEC_SystemTimer_50 (50UL)
 
 
 /**********************************************************************************************************************
@@ -212,7 +213,7 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void) /* PRQA S 0850 */ /* MD_MSR_19.8 
   (void)ActivateTask(OsTask_swc_Init); /* PRQA S 3417 */ /* MD_Rte_Os */
 
   /* activate the alarms used for TimingEvents */
-  (void)SetRelAlarm(Rte_Al_TE_Test_swc_Test_swc_10ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(10)); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)SetRelAlarm(Rte_Al_TE_Test_swc_Test_swc_50ms, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(50)); /* PRQA S 3417 */ /* MD_Rte_Os */
 
   return RTE_E_OK;
 } /* PRQA S 6050 */ /* MD_MSR_STCAL */
@@ -220,7 +221,7 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void) /* PRQA S 0850 */ /* MD_MSR_19.8 
 FUNC(Std_ReturnType, RTE_CODE) Rte_Stop(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
   /* deactivate alarms */
-  (void)CancelAlarm(Rte_Al_TE_Test_swc_Test_swc_10ms); /* PRQA S 3417 */ /* MD_Rte_Os */
+  (void)CancelAlarm(Rte_Al_TE_Test_swc_Test_swc_50ms); /* PRQA S 3417 */ /* MD_Rte_Os */
 
   return RTE_E_OK;
 }
@@ -1174,13 +1175,13 @@ TASK(OsTask_swc_Init) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1 */
  * Task:     OsTask_swc_Task
  * Priority: 0
  * Schedule: FULL
- * Alarm:    Cycle Time 0.01 s Alarm Offset 0 s
+ * Alarm:    Cycle Time 0.05 s Alarm Offset 0 s
  *********************************************************************************************************************/
 TASK(OsTask_swc_Task) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1 */
 {
 
   /* call runnable */
-  Test_swc_10ms();
+  Test_swc_50ms();
 
   (void)TerminateTask(); /* PRQA S 3417 */ /* MD_Rte_Os */
 } /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */

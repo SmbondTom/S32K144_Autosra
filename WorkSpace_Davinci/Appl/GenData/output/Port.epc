@@ -12,7 +12,7 @@
           <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-POST-BUILD</IMPLEMENTATION-CONFIG-VARIANT>
           <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/TS_T40D2M10I1R0/Port_Impl</MODULE-DESCRIPTION-REF>
           <CONTAINERS>
-            <ECUC-CONTAINER-VALUE UUID="16fbd0dc-1879-4778-ade3-f6caf8b46c07">
+            <ECUC-CONTAINER-VALUE UUID="3e065d4f-9cc6-4dda-870c-3a2f36454ff2">
               <SHORT-NAME>CommonPublishedInformation</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/CommonPublishedInformation</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -50,11 +50,11 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
               </PARAMETER-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="94171b8b-1982-4086-b114-df6cb92869d7">
+            <ECUC-CONTAINER-VALUE UUID="3cdda5fc-8c69-4634-a56b-981f93ade01a">
               <SHORT-NAME>PortConfigSet</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet</DEFINITION-REF>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="789d8c9d-1b5e-4bb1-a7e9-9b1b4d94f691">
+                <ECUC-CONTAINER-VALUE UUID="8ae203b2-afc4-4057-8b71-b3a6f2201a92">
                   <SHORT-NAME>NotUsedPortPin</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/NotUsedPortPin</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -80,7 +80,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="aaecf06d-7773-49a0-a5c9-b7876a7a9089">
+                <ECUC-CONTAINER-VALUE UUID="ea002ffb-744c-4034-98e3-7faa9eb142f4">
                   <SHORT-NAME>PortContainer_CAN0</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/PortContainer</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -90,7 +90,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="69e4ca78-691a-42b2-8467-a291a9a70953">
+                    <ECUC-CONTAINER-VALUE UUID="5c8132ff-8074-44d5-8ef7-1bc4665cad71">
                       <SHORT-NAME>PortPin_CAN0_Rx</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -144,7 +144,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="9ab07faf-d956-434e-bb36-6abe5b8b975d">
+                    <ECUC-CONTAINER-VALUE UUID="d8c79934-8533-454c-83ef-1c06e6a2edc2">
                       <SHORT-NAME>PortPin_CAN0_Tx</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -200,7 +200,7 @@
                     </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="a51d68db-6c5b-473c-b6b2-695bcd307c19">
+                <ECUC-CONTAINER-VALUE UUID="c56ccf2e-d43a-4e1a-9d95-c8b030072b92">
                   <SHORT-NAME>PortContainer_JTAG</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/PortContainer</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -210,7 +210,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="35b837f5-ec58-4611-869c-2063247c8cd7">
+                    <ECUC-CONTAINER-VALUE UUID="91763799-1db4-4b73-9c3a-b5173f28bd10">
                       <SHORT-NAME>PortPin_JTAG_MCU_RESET_PTA5</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -264,7 +264,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="2f75d27c-e2c6-48cd-bcb1-6e1f57de2aaa">
+                    <ECUC-CONTAINER-VALUE UUID="1f552c39-cca1-4283-9b85-976b02cc56b3">
                       <SHORT-NAME>PortPin_JTAG_TCK_SWD_CLK_PTC4</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -318,7 +318,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="4b78a6aa-36ee-403b-84fa-700114365d4c">
+                    <ECUC-CONTAINER-VALUE UUID="4424f415-8e87-47ce-a965-1308f944b28e">
                       <SHORT-NAME>PortPin_JTAG_TDI_PTC5</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -372,7 +372,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="25b00946-82ce-49f5-b451-a7d384180cbe">
+                    <ECUC-CONTAINER-VALUE UUID="2a687b64-60ad-4b4a-8d47-3cfda5312252">
                       <SHORT-NAME>PortPin_JTAG_TDO_PTA10</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -426,7 +426,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="4459d55a-9ff3-4709-a69a-2b4320ba151b">
+                    <ECUC-CONTAINER-VALUE UUID="de755ceb-53ee-49da-b575-9b6c3e3c1df7">
                       <SHORT-NAME>PortPin_JTAG_TMS_SW_DIO_PTA4</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -482,7 +482,7 @@
                     </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="b84319e9-ef2a-43d0-a1f2-681cbdd4fc9e">
+                <ECUC-CONTAINER-VALUE UUID="b07b1d23-70c0-4dac-8f38-7bc129d46785">
                   <SHORT-NAME>PortContainer_LED</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/PortContainer</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -492,7 +492,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="ee06328e-dbcc-4189-8bcf-b44376b58001">
+                    <ECUC-CONTAINER-VALUE UUID="22ee51e7-3e47-43fc-93c6-256e967dfcbf">
                       <SHORT-NAME>PortPin_LED_RED</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -550,7 +550,7 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="2056776e-3c40-4ec7-8dce-b2667daa1866">
+            <ECUC-CONTAINER-VALUE UUID="ab30838e-3c1d-4e15-b4b3-ac496a6756b8">
               <SHORT-NAME>PortGeneral</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Port/PortGeneral</DEFINITION-REF>
               <PARAMETER-VALUES>

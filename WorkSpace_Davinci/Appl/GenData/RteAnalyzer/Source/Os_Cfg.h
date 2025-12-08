@@ -31,7 +31,7 @@
 
 /* Alarms */
 # define Rte_Al_TE2_OsTask_Bsw_0_10ms (0U)
-# define Rte_Al_TE_Test_swc_Test_swc_10ms (1U)
+# define Rte_Al_TE_Test_swc_Test_swc_50ms (1U)
 
 /* Events */
 # define Rte_Ev_Cyclic2_OsTask_Bsw_0_10ms (0x01)

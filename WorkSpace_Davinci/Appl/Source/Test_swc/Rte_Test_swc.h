@@ -11,7 +11,7 @@
  *          File:  Rte_Test_swc.h
  *        Config:  G:/AutoProject144/S32k144_MinSystem/WorkSpace_Davinci/Autosar_MinSystem.dpa
  *     SW-C Type:  Test_swc
- *  Generated at:  Sun Dec  7 20:44:27 2025
+ *  Generated at:  Mon Dec  8 21:36:33 2025
  *
  *     Generator:  MICROSAR RTE Generator Version 4.19.0
  *                 RTE Core Version 1.19.0
@@ -91,17 +91,17 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Write_Test_swc_Request_ESH_RunRequest_0_reque
 
 /**********************************************************************************************************************
  *
- * Runnable Entity Name: Test_swc_10ms
+ * Runnable Entity Name: Test_swc_50ms
  *
  *---------------------------------------------------------------------------------------------------------------------
  *
  * Executed if at least one of the following trigger conditions occurred:
- *   - triggered on TimingEvent every 10ms
+ *   - triggered on TimingEvent every 50ms
  *
  *********************************************************************************************************************/
 
-# define RTE_RUNNABLE_Test_swc_10ms Test_swc_10ms
-FUNC(void, Test_swc_CODE) Test_swc_10ms(void); /* PRQA S 0850 */ /* MD_MSR_19.8 */
+# define RTE_RUNNABLE_Test_swc_50ms Test_swc_50ms
+FUNC(void, Test_swc_CODE) Test_swc_50ms(void); /* PRQA S 0850 */ /* MD_MSR_19.8 */
 
 /**********************************************************************************************************************
  *

@@ -79,11 +79,11 @@ extern VAR(BswM_ESH_RunRequest, RTE_VAR_NOINIT) Rte_Test_swc_Request_ESH_RunRequ
  *********************************************************************************************************************/
 
 # ifndef RTE_CORE
-#  define RTE_RUNNABLE_Test_swc_10ms Test_swc_10ms
+#  define RTE_RUNNABLE_Test_swc_50ms Test_swc_50ms
 #  define RTE_RUNNABLE_Test_swc_Init Test_swc_Init
 # endif
 
-FUNC(void, Test_swc_CODE) Test_swc_10ms(void); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
+FUNC(void, Test_swc_CODE) Test_swc_50ms(void); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
 FUNC(void, Test_swc_CODE) Test_swc_Init(void); /* PRQA S 0850, 3451 */ /* MD_MSR_19.8, MD_Rte_3451 */
 
 # define Test_swc_STOP_SEC_CODE

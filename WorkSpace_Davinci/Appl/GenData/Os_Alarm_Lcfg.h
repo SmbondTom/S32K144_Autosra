@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Alarm_Lcfg.h
- *   Generation Time: 2025-12-07 20:44:14
+ *   Generation Time: 2025-12-08 21:36:44
  *           Project: Autosar_MinSystem - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -74,8 +74,8 @@
 /*! Alarm configuration data: Rte_Al_TE2_OsTask_Bsw_0_10ms */
 extern CONST(Os_AlarmSetEventConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE2_OsTask_Bsw_0_10ms;
 
-/*! Alarm configuration data: Rte_Al_TE_Test_swc_Test_swc_10ms */
-extern CONST(Os_AlarmActivateTaskConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Test_swc_Test_swc_10ms;
+/*! Alarm configuration data: Rte_Al_TE_Test_swc_Test_swc_50ms */
+extern CONST(Os_AlarmActivateTaskConfigType, OS_CONST) OsCfg_Alarm_Rte_Al_TE_Test_swc_Test_swc_50ms;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */

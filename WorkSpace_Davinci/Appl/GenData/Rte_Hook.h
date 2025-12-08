@@ -56,8 +56,8 @@
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Return
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Start
- *  Rte_Runnable_Test_swc_Test_swc_10ms_Return
- *  Rte_Runnable_Test_swc_Test_swc_10ms_Start
+ *  Rte_Runnable_Test_swc_Test_swc_50ms_Return
+ *  Rte_Runnable_Test_swc_Test_swc_50ms_Start
  *  Rte_Runnable_Test_swc_Test_swc_Init_Return
  *  Rte_Runnable_Test_swc_Test_swc_Init_Start
  *  Rte_SwitchHook_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_Return

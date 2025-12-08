@@ -61,7 +61,7 @@
       AUTOSTART = FALSE:"@RO@";
    }:"@RO@@NR@";
 
-   ALARM Rte_Al_TE_Test_swc_Test_swc_10ms {
+   ALARM Rte_Al_TE_Test_swc_Test_swc_50ms {
       COUNTER = SystemTimer;
       ACTION = ACTIVATETASK
       {

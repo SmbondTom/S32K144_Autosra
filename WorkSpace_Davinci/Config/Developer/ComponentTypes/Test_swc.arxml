@@ -35,8 +35,8 @@
                 </INIT-EVENT>
                 <TIMING-EVENT UUID="36A4A181-7884-492A-AF19-72E51C66CC9E">
                   <SHORT-NAME>TMT_Test_swc_10ms</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Test_swc/Test_swc_InternalBehavior/Test_swc_10ms</START-ON-EVENT-REF>
-                  <PERIOD>0.01</PERIOD>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/Test_swc/Test_swc_InternalBehavior/Test_swc_50ms</START-ON-EVENT-REF>
+                  <PERIOD>0.05</PERIOD>
                 </TIMING-EVENT>
               </EVENTS>
               <RUNNABLES>
@@ -62,7 +62,7 @@
                   </DATA-SEND-POINTS>
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="753F5004-AA17-45C1-AC4A-F376D8A0539D">
-                  <SHORT-NAME>Test_swc_10ms</SHORT-NAME>
+                  <SHORT-NAME>Test_swc_50ms</SHORT-NAME>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
               <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>

@@ -4,7 +4,7 @@
  *          File:  Test_swc.c
  *        Config:  G:/AutoProject144/S32k144_MinSystem/WorkSpace_Davinci/Autosar_MinSystem.dpa
  *     SW-C Type:  Test_swc
- *  Generated at:  Sun Dec  7 20:44:27 2025
+ *  Generated at:  Mon Dec  8 21:36:34 2025
  *
  *     Generator:  MICROSAR RTE Generator Version 4.19.0
  *                 RTE Core Version 1.19.0
@@ -48,7 +48,8 @@
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of include and declaration area >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
-
+#include "Dio.h" /* PRQA S 0857 */ /* MD_MSR_1.1_857 */
+#include "Dio_Cfg.h" /* PRQA S 0857 */ /* MD_MSR_1.1_857 */
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
@@ -79,17 +80,17 @@
 
 /**********************************************************************************************************************
  *
- * Runnable Entity Name: Test_swc_10ms
+ * Runnable Entity Name: Test_swc_50ms
  *
  *---------------------------------------------------------------------------------------------------------------------
  *
  * Executed if at least one of the following trigger conditions occurred:
- *   - triggered on TimingEvent every 10ms
+ *   - triggered on TimingEvent every 50ms
  *
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
- * Symbol: Test_swc_10ms_doc
+ * Symbol: Test_swc_50ms_doc
  *********************************************************************************************************************/
 
 
@@ -97,13 +98,13 @@
  * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
-FUNC(void, Test_swc_CODE) Test_swc_10ms(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+FUNC(void, Test_swc_CODE) Test_swc_50ms(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
- * Symbol: Test_swc_10ms
+ * Symbol: Test_swc_50ms
  *********************************************************************************************************************/
-
+Dio_FlipChannel(DioConf_DioChannel_DioChannel_LED_RED_PTD15);
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -169,6 +170,21 @@ FUNC(void, Test_swc_CODE) Test_swc_Init(void) /* PRQA S 0850 */ /* MD_MSR_19.8 *
  * DO NOT CHANGE THIS COMMENT!           << Start of removed code area >>                   DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
+
+
+#if 0
+/***  Start of saved code (symbol: runnable implementation:Test_swc_10ms)  **********************************/
+  Dio_FlipChannel(DioConf_DioChannel_DioChannel_LED_RED_PTD15);
+
+/***  End of saved code  ************************************************************************************/
+#endif
+
+#if 0
+/***  Start of saved code (symbol: documentation area:Test_swc_10ms_doc)  ***********************************/
+
+
+/***  End of saved code  ************************************************************************************/
+#endif
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of removed code area >>                     DO NOT CHANGE THIS COMMENT!

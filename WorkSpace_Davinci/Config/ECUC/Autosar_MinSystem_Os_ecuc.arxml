@@ -980,7 +980,7 @@ Document Number: S32K14XRM - Rev. 3, 03/2017</VALUE>
                 </ECUC-REFERENCE-VALUE>
                 <ECUC-REFERENCE-VALUE>
                   <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Os/OsApplication/OsAppAlarmRef</DEFINITION-REF>
-                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_Test_swc_Test_swc_10ms</VALUE-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Rte_Al_TE_Test_swc_Test_swc_50ms</VALUE-REF>
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
               <SUB-CONTAINERS>
@@ -1280,8 +1280,8 @@ Document Number: S32K14XRM - Rev. 3, 03/2017</VALUE>
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="87b7b803-3293-4a76-b71b-92feb4c39301">
-              <SHORT-NAME>Rte_Al_TE_Test_swc_Test_swc_10ms</SHORT-NAME>
+            <ECUC-CONTAINER-VALUE UUID="458efd74-d6a4-4501-90e0-75da52a05919">
+              <SHORT-NAME>Rte_Al_TE_Test_swc_Test_swc_50ms</SHORT-NAME>
               <ANNOTATIONS>
                 <ANNOTATION>
                   <ANNOTATION-ORIGIN>DV:RTE</ANNOTATION-ORIGIN>
@@ -1304,7 +1304,7 @@ Document Number: S32K14XRM - Rev. 3, 03/2017</VALUE>
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="76386692-a1eb-4acb-b5e5-c44914c373f4">
+                <ECUC-CONTAINER-VALUE UUID="f0a8d18b-2a9f-408f-b768-d15ce0d6bf33">
                   <SHORT-NAME>OsAlarmAction</SHORT-NAME>
                   <ANNOTATIONS>
                     <ANNOTATION>
@@ -1313,7 +1313,7 @@ Document Number: S32K14XRM - Rev. 3, 03/2017</VALUE>
                   </ANNOTATIONS>
                   <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/MICROSAR/Os/OsAlarm/OsAlarmAction</DEFINITION-REF>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="9f9b3014-f118-46d6-a9e8-769a9b35b968">
+                    <ECUC-CONTAINER-VALUE UUID="07bd5efb-4486-40b7-8be8-a940c1dcfc1d">
                       <SHORT-NAME>OsAlarmActivateTask</SHORT-NAME>
                       <ANNOTATIONS>
                         <ANNOTATION>

@@ -81,8 +81,12 @@
             <Module Name="Port"/>
             <Module Name="Port"/>
             <Module Name="Port"/>
+            <Module Name="Port"/>
+            <Module Name="Port"/>
         </Splitter>
         <Splitter File=".\Config\ECUC\Autosar_MinSystem_Dio_ecuc.arxml">
+            <Module Name="Dio"/>
+            <Module Name="Dio"/>
             <Module Name="Dio"/>
             <Module Name="Dio"/>
             <Module Name="Dio"/>
@@ -93,14 +97,20 @@
             <Module Name="Base"/>
             <Module Name="Base"/>
             <Module Name="Base"/>
+            <Module Name="Base"/>
+            <Module Name="Base"/>
         </Splitter>
         <Splitter File=".\Config\ECUC\Autosar_MinSystem_Resource_ecuc.arxml">
             <Module Name="Resource"/>
             <Module Name="Resource"/>
             <Module Name="Resource"/>
             <Module Name="Resource"/>
+            <Module Name="Resource"/>
+            <Module Name="Resource"/>
         </Splitter>
         <Splitter File=".\Config\ECUC\Autosar_MinSystem_Mcu_ecuc.arxml">
+            <Module Name="Mcu"/>
+            <Module Name="Mcu"/>
             <Module Name="Mcu"/>
             <Module Name="Mcu"/>
             <Module Name="Mcu"/>

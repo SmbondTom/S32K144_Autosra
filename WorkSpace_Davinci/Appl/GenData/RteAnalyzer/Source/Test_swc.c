@@ -97,17 +97,17 @@ static void Test_swc_TestDefines(void);
 
 /**********************************************************************************************************************
  *
- * Runnable Entity Name: Test_swc_10ms
+ * Runnable Entity Name: Test_swc_50ms
  *
  *---------------------------------------------------------------------------------------------------------------------
  *
  * Executed if at least one of the following trigger conditions occurred:
- *   - triggered on TimingEvent every 10ms
+ *   - triggered on TimingEvent every 50ms
  *
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
- * Symbol: Test_swc_10ms_doc
+ * Symbol: Test_swc_50ms_doc
  *********************************************************************************************************************/
 
 
@@ -115,11 +115,11 @@ static void Test_swc_TestDefines(void);
  * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 
-FUNC(void, Test_swc_CODE) Test_swc_10ms(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
+FUNC(void, Test_swc_CODE) Test_swc_50ms(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
- * Symbol: Test_swc_10ms
+ * Symbol: Test_swc_50ms
  *********************************************************************************************************************/
 
   Test_swc_TestDefines();

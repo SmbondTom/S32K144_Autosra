@@ -134,7 +134,7 @@
                                     <REFERENCE-VALUES>
                                         <ECUC-REFERENCE-VALUE>
                                             <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteSwComponentInstance/RteEventToTaskMapping/RteUsedOsAlarmRef</DEFINITION-REF>
-                                            <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/DaVinci_Project/Os/Rte_Al_TE_Test_swc_Test_swc_10ms</VALUE-REF>
+                                            <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/DaVinci_Project/Os/Rte_Al_TE_Test_swc_Test_swc_50ms</VALUE-REF>
                                         </ECUC-REFERENCE-VALUE>
                                     </REFERENCE-VALUES>
                                 </ECUC-CONTAINER-VALUE>
@@ -165,7 +165,7 @@
                                     </REFERENCE-VALUES>
                                 </ECUC-CONTAINER-VALUE>
                                 <ECUC-CONTAINER-VALUE>
-                                    <SHORT-NAME>Rte_Al_TE_Test_swc_Test_swc_10ms</SHORT-NAME>
+                                    <SHORT-NAME>Rte_Al_TE_Test_swc_Test_swc_50ms</SHORT-NAME>
                                     <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation</DEFINITION-REF>
                                        <PARAMETER-VALUES>
                                            <ECUC-NUMERICAL-PARAM-VALUE>
@@ -176,7 +176,7 @@
                                     <REFERENCE-VALUES>
                                         <ECUC-REFERENCE-VALUE>
                                             <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsAlarmRef</DEFINITION-REF>
-                                            <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/DaVinci_Project/Os/Rte_Al_TE_Test_swc_Test_swc_10ms</VALUE-REF>
+                                            <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/DaVinci_Project/Os/Rte_Al_TE_Test_swc_Test_swc_50ms</VALUE-REF>
                                         </ECUC-REFERENCE-VALUE>
                                            <ECUC-REFERENCE-VALUE>
                                                <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/MICROSAR/Rte/RteOsInteraction/RteUsedOsActivation/RteActivationOsTaskRef</DEFINITION-REF>
@@ -295,7 +295,7 @@
                             </REFERENCE-VALUES>
                         </ECUC-CONTAINER-VALUE>
                         <ECUC-CONTAINER-VALUE>
-                            <SHORT-NAME>Rte_Al_TE_Test_swc_Test_swc_10ms</SHORT-NAME>
+                            <SHORT-NAME>Rte_Al_TE_Test_swc_Test_swc_50ms</SHORT-NAME>
                             <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/MICROSAR/Os/OsAlarm</DEFINITION-REF>
                             <REFERENCE-VALUES>
                                 <ECUC-REFERENCE-VALUE>

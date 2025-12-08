@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: EcuM_Callout_Stubs.c
- *   Generation Time: 2025-12-04 19:12:14
+ *   Generation Time: 2025-12-08 21:32:02
  *           Project: Autosar_MinSystem - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -55,23 +55,23 @@
  *  All configured EcuM Wakeup Sources (as bitmasks) for usage in Callouts
  *********************************************************************************************************************/
 /*
- * ECUM_WKSOURCE_NONE           (EcuM_WakeupSourceType)(0x00000000uL)
- * ECUM_WKSOURCE_ALL_SOURCES    (EcuM_WakeupSourceType)(~((EcuM_WakeupSourceType)0x00UL))
- * ECUM_WKSOURCE_POWER          (EcuM_WakeupSourceType)(1uL)
- * ECUM_WKSOURCE_RESET          (EcuM_WakeupSourceType)(2uL)
- * ECUM_WKSOURCE_INTERNAL_RESET (EcuM_WakeupSourceType)(4uL)
- * ECUM_WKSOURCE_INTERNAL_WDG   (EcuM_WakeupSourceType)(8uL)
- * ECUM_WKSOURCE_EXTERNAL_WDG   (EcuM_WakeupSourceType)(16uL)
+ * ECUM_WKSOURCE_NONE           (EcuM_WakeupSourceType)(0x00000000uL) 
+ * ECUM_WKSOURCE_ALL_SOURCES    (EcuM_WakeupSourceType)(~((EcuM_WakeupSourceType)0x00UL)) 
+ * ECUM_WKSOURCE_POWER          (EcuM_WakeupSourceType)(1uL) 
+ * ECUM_WKSOURCE_RESET          (EcuM_WakeupSourceType)(2uL) 
+ * ECUM_WKSOURCE_INTERNAL_RESET (EcuM_WakeupSourceType)(4uL) 
+ * ECUM_WKSOURCE_INTERNAL_WDG   (EcuM_WakeupSourceType)(8uL) 
+ * ECUM_WKSOURCE_EXTERNAL_WDG   (EcuM_WakeupSourceType)(16uL) 
  */
 
 /**********************************************************************************************************************
  *  Additional configured User includes
  *********************************************************************************************************************/
-#include "BswM.h"
-#include "Det.h"
-#include "Rte_Main.h"
-#include "Mcu.h"
-#include "Port.h"
+#include "BswM.h" 
+#include "Det.h" 
+#include "Rte_Main.h" 
+#include "Mcu.h" 
+#include "Port.h" 
 
 
 /**********************************************************************************************************************
@@ -226,7 +226,7 @@ FUNC(void, ECUM_CODE) EcuM_AL_Reset(EcuM_ResetType Reset)
 /**********************************************************************************************************************
 * EcuM_AL_DriverInitZero
 **********************************************************************************************************************/
-FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void)
+FUNC(void, ECUM_CODE) EcuM_AL_DriverInitZero(void) 
 {
   BswM_InitMemory();
   Det_InitMemory();
@@ -247,7 +247,7 @@ return;
 /**********************************************************************************************************************
 * EcuM_AL_DriverInitOne
 **********************************************************************************************************************/
-FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void)
+FUNC(void, ECUM_CODE) EcuM_AL_DriverInitOne(void) 
 {
   Mcu_Init( &McuModuleConfiguration );
   Mcu_InitClock(McuConf_McuClockSettingConfig_McuClockSettingConfig_0);
@@ -269,7 +269,7 @@ return;
 /**********************************************************************************************************************
 * EcuM_AL_DriverRestartList
 **********************************************************************************************************************/
-FUNC(void, ECUM_CODE) EcuM_AL_DriverRestartList(void)
+FUNC(void, ECUM_CODE) EcuM_AL_DriverRestartList(void) 
 {
 
 /**********************************************************************************************************************
